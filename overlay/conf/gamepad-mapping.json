@@ -4,6 +4,125 @@
       "id": "com.futuretek.dpacs",
       "name": "DPACS Mode"
     },
+    "handheldType": "RC",
+    "buttonMap": [
+      [
+        {
+          "displayName": "CH7"
+        },
+        {
+          "id": "dpacs.cmd.rtl",
+          "name": "RTL Return to launch",
+          "type": "BUTTON"
+        }
+      ]
+    ],
+    "axisMap": [
+      [
+        {
+          "displayName": "Right Stick X"
+        },
+        {
+          "id": "dpacs.cmd.roll",
+          "name": "Roll",
+          "type": "AXIS"
+        }
+      ],
+      [
+        {
+          "displayName": "Righty Stick Y"
+        },
+        {
+          "id": "dpacs.cmd.pitch",
+          "name": "Pitch",
+          "type": "AXIS"
+        }
+      ],
+      [
+        {
+          "displayName": "Left Stick X"
+        },
+        {
+          "id": "dpacs.cmd.yaw",
+          "name": "Yaw",
+          "type": "AXIS"
+        }
+      ],
+      [
+        {
+          "displayName": "CH5"
+        },
+        {
+          "id": "dpacs.cmd.flightMode",
+          "name": "Flight Mode",
+          "type": "AXIS"
+        }
+      ],
+      [
+        {
+          "displayName": "Left Stick Y"
+        },
+        {
+          "id": "dpacs.cmd.throttle",
+          "name": "Throttle",
+          "type": "AXIS"
+        }
+      ],
+      [
+        {
+          "displayName": "CH6 Knob"
+        },
+        {
+          "id": "dpacs.cmd.gimbalPitch",
+          "name": "Adjust Gimble Up or Down",
+          "type": "AXIS"
+        }
+      ]
+    ],
+    "isInvertedMap": [
+      [
+        {
+          "displayName": "Right Stick X"
+        },
+        true
+      ],
+      [
+        {
+          "displayName": "Righty Stick Y"
+        },
+        false
+      ],
+      [
+        {
+          "displayName": "Left Stick X"
+        },
+        true
+      ],
+      [
+        {
+          "displayName": "CH5"
+        },
+        false
+      ],
+      [
+        {
+          "displayName": "Left Stick Y"
+        },
+        true
+      ],
+      [
+        {
+          "displayName": "CH6 Knob"
+        },
+        false
+      ]
+    ]
+  },
+  {
+    "mode": {
+      "id": "com.futuretek.dpacs",
+      "name": "DPACS Mode"
+    },
     "handheldType": "XBOX",
     "buttonMap": [
       [
@@ -124,7 +243,7 @@
         {
           "displayName": "Right Stick Y"
         },
-        true
+        false
       ],
       [
         {
@@ -190,294 +309,6 @@
         }
       ]
     ],
-    "axisMap": {},
-    "isInvertedMap": {}
-  },
-  {
-    "mode": {
-      "id": "com.futuretek.dpacs",
-      "name": "DPACS Mode"
-    },
-    "handheldType": "DESERT_ROTOR_AUX",
-    "buttonMap": {},
-    "axisMap": [
-      [
-        {
-          "displayName": "Left Stick X"
-        },
-        {
-          "id": "dpacs.cmd.gimbalPan",
-          "name": "Pan Gimbal Left or Right",
-          "type": "AXIS"
-        }
-      ],
-      [
-        {
-          "displayName": "Left Knob I"
-        },
-        {
-          "id": "dpacs.cmd.cameraZoom",
-          "name": "Zoom Camera In and Out",
-          "type": "AXIS"
-        }
-      ],
-      [
-        {
-          "displayName": "Left Stick Y"
-        },
-        {
-          "id": "dpacs.cmd.gimbalPitch",
-          "name": "Adjust Gimble Up or Down",
-          "type": "AXIS"
-        }
-      ]
-    ],
-    "isInvertedMap": [
-      [
-        {
-          "displayName": "Left Stick X"
-        },
-        false
-      ],
-      [
-        {
-          "displayName": "Left Knob I"
-        },
-        false
-      ],
-      [
-        {
-          "displayName": "Left Stick Y"
-        },
-        false
-      ]
-    ]
-  },
-  {
-    "mode": {
-      "id": "com.futuretek.dpacs",
-      "name": "DPACS Mode"
-    },
-    "handheldType": "DESERT_ROTOR_MAIN",
-    "buttonMap": [
-      [
-        {
-          "displayName": "1"
-        },
-        {
-          "id": "dpacs.cmd.disarm",
-          "name": "Disarm will kill the power",
-          "type": "BUTTON"
-        }
-      ],
-      [
-        {
-          "displayName": "2"
-        },
-        {
-          "id": "dpacs.cmd.rtl",
-          "name": "RTL Return to launch",
-          "type": "BUTTON"
-        }
-      ],
-      [
-        {
-          "displayName": "3"
-        },
-        {
-          "id": "dpacs.cmd.halt",
-          "name": "Halt Mode",
-          "type": "BUTTON"
-        }
-      ],
-      [
-        {
-          "displayName": "14"
-        },
-        {
-          "id": "dpacs.cmd.cameraToggleEoIr",
-          "name": "Toggle Camera EO and IR",
-          "type": "BUTTON"
-        }
-      ],
-      [
-        {
-          "displayName": "4"
-        },
-        {
-          "id": "dpacs.cmd.land",
-          "name": "Land",
-          "type": "BUTTON"
-        }
-      ],
-      [
-        {
-          "displayName": "5"
-        },
-        {
-          "id": "dpacs.cmd.loiter",
-          "name": "Loiter Mode",
-          "type": "BUTTON"
-        }
-      ],
-      [
-        {
-          "displayName": "7"
-        },
-        {
-          "id": "dpacs.cmd.altitudehold",
-          "name": "Altitude Hold",
-          "type": "BUTTON"
-        }
-      ],
-      [
-        {
-          "displayName": "8"
-        },
-        {
-          "id": "dpacs.cmd.lightsOff",
-          "name": "Lights Off",
-          "type": "BUTTON"
-        }
-      ],
-      [
-        {
-          "displayName": "9"
-        },
-        {
-          "id": "dpacs.cmd.irStrobe",
-          "name": "IR Night Strobe",
-          "type": "BUTTON"
-        }
-      ],
-      [
-        {
-          "displayName": "10"
-        },
-        {
-          "id": "dpacs.cmd.dayStrobe",
-          "name": "Day Strobe",
-          "type": "BUTTON"
-        }
-      ]
-    ],
-    "axisMap": [
-      [
-        {
-          "displayName": "Right Stick Y"
-        },
-        {
-          "id": "dpacs.cmd.pitch",
-          "name": "Pitch",
-          "type": "AXIS"
-        }
-      ],
-      [
-        {
-          "displayName": "Throttle Slider"
-        },
-        {
-          "id": "dpacs.cmd.throttle",
-          "name": "Throttle",
-          "type": "AXIS"
-        }
-      ],
-      [
-        {
-          "displayName": "Right Stick RZ"
-        },
-        {
-          "id": "dpacs.cmd.yaw",
-          "name": "Yaw",
-          "type": "AXIS"
-        }
-      ],
-      [
-        {
-          "displayName": "Right Stick X"
-        },
-        {
-          "id": "dpacs.cmd.roll",
-          "name": "Roll",
-          "type": "AXIS"
-        }
-      ]
-    ],
-    "isInvertedMap": [
-      [
-        {
-          "displayName": "Right Stick Y"
-        },
-        false
-      ],
-      [
-        {
-          "displayName": "Throttle Slider"
-        },
-        false
-      ],
-      [
-        {
-          "displayName": "Right Stick RZ"
-        },
-        false
-      ],
-      [
-        {
-          "displayName": "Right Stick X"
-        },
-        false
-      ]
-    ]
-  },
-  {
-    "mode": {
-      "id": "GamepadCommandTargetSelector.SELECTION_MODE",
-      "name": "Selection"
-    },
-    "handheldType": "XBOX",
-    "buttonMap": [
-      [
-        {
-          "displayName": "D-Pad Up"
-        },
-        {
-          "id": "GamepadCommandTargetSelector.PREVIOUS_TARGET",
-          "name": "Previous target",
-          "type": "BUTTON"
-        }
-      ],
-      [
-        {
-          "displayName": "A"
-        },
-        {
-          "id": "GamepadCommandTargetSelector.SELECT_TARGET",
-          "name": "Select target",
-          "type": "BUTTON"
-        }
-      ],
-      [
-        {
-          "displayName": "D-Pad Down"
-        },
-        {
-          "id": "GamepadCommandTargetSelector.NEXT_TARGET",
-          "name": "Next target",
-          "type": "BUTTON"
-        }
-      ]
-    ],
-    "axisMap": {},
-    "isInvertedMap": {}
-  },
-  {
-    "mode": {
-      "id": "GamepadCommandTree.UNIVERSAL_MODE",
-      "name": "Universal"
-    },
-    "handheldType": "XBOX",
-    "buttonMap": {},
     "axisMap": {},
     "isInvertedMap": {}
   },
@@ -723,6 +554,335 @@
       "id": "com.futuretek.dpacs",
       "name": "DPACS Mode"
     },
+    "handheldType": "DESERT_ROTOR_MAIN",
+    "buttonMap": [
+      [
+        {
+          "displayName": "1"
+        },
+        {
+          "id": "dpacs.cmd.disarm",
+          "name": "Disarm will kill the power",
+          "type": "BUTTON"
+        }
+      ],
+      [
+        {
+          "displayName": "2"
+        },
+        {
+          "id": "dpacs.cmd.rtl",
+          "name": "RTL Return to launch",
+          "type": "BUTTON"
+        }
+      ],
+      [
+        {
+          "displayName": "3"
+        },
+        {
+          "id": "dpacs.cmd.halt",
+          "name": "Halt Mode",
+          "type": "BUTTON"
+        }
+      ],
+      [
+        {
+          "displayName": "14"
+        },
+        {
+          "id": "dpacs.cmd.cameraToggleEoIr",
+          "name": "Toggle Camera EO and IR",
+          "type": "BUTTON"
+        }
+      ],
+      [
+        {
+          "displayName": "4"
+        },
+        {
+          "id": "dpacs.cmd.land",
+          "name": "Land",
+          "type": "BUTTON"
+        }
+      ],
+      [
+        {
+          "displayName": "5"
+        },
+        {
+          "id": "dpacs.cmd.loiter",
+          "name": "Loiter Mode",
+          "type": "BUTTON"
+        }
+      ],
+      [
+        {
+          "displayName": "7"
+        },
+        {
+          "id": "dpacs.cmd.altitudehold",
+          "name": "Altitude Hold",
+          "type": "BUTTON"
+        }
+      ],
+      [
+        {
+          "displayName": "8"
+        },
+        {
+          "id": "dpacs.cmd.lightsOff",
+          "name": "Lights Off",
+          "type": "BUTTON"
+        }
+      ],
+      [
+        {
+          "displayName": "9"
+        },
+        {
+          "id": "dpacs.cmd.irStrobe",
+          "name": "IR Night Strobe",
+          "type": "BUTTON"
+        }
+      ],
+      [
+        {
+          "displayName": "10"
+        },
+        {
+          "id": "dpacs.cmd.dayStrobe",
+          "name": "Day Strobe",
+          "type": "BUTTON"
+        }
+      ]
+    ],
+    "axisMap": [
+      [
+        {
+          "displayName": "Right Stick Y"
+        },
+        {
+          "id": "dpacs.cmd.pitch",
+          "name": "Pitch",
+          "type": "AXIS"
+        }
+      ],
+      [
+        {
+          "displayName": "Throttle Slider"
+        },
+        {
+          "id": "dpacs.cmd.throttle",
+          "name": "Throttle",
+          "type": "AXIS"
+        }
+      ],
+      [
+        {
+          "displayName": "Right Stick RZ"
+        },
+        {
+          "id": "dpacs.cmd.yaw",
+          "name": "Yaw",
+          "type": "AXIS"
+        }
+      ],
+      [
+        {
+          "displayName": "Right Stick X"
+        },
+        {
+          "id": "dpacs.cmd.roll",
+          "name": "Roll",
+          "type": "AXIS"
+        }
+      ]
+    ],
+    "isInvertedMap": [
+      [
+        {
+          "displayName": "Right Stick Y"
+        },
+        false
+      ],
+      [
+        {
+          "displayName": "Throttle Slider"
+        },
+        false
+      ],
+      [
+        {
+          "displayName": "Right Stick RZ"
+        },
+        false
+      ],
+      [
+        {
+          "displayName": "Right Stick X"
+        },
+        false
+      ]
+    ]
+  },
+  {
+    "mode": {
+      "id": "GamepadCommandTree.UNIVERSAL_MODE",
+      "name": "Universal"
+    },
+    "handheldType": "XBOX",
+    "buttonMap": {},
+    "axisMap": {},
+    "isInvertedMap": {}
+  },
+  {
+    "mode": {
+      "id": "com.futuretek.dpacs",
+      "name": "DPACS Mode"
+    },
+    "handheldType": "DESERT_ROTOR_AUX",
+    "buttonMap": {},
+    "axisMap": [
+      [
+        {
+          "displayName": "Left Stick X"
+        },
+        {
+          "id": "dpacs.cmd.gimbalPan",
+          "name": "Pan Gimbal Left or Right",
+          "type": "AXIS"
+        }
+      ],
+      [
+        {
+          "displayName": "Left Knob I"
+        },
+        {
+          "id": "dpacs.cmd.cameraZoom",
+          "name": "Zoom Camera In and Out",
+          "type": "AXIS"
+        }
+      ],
+      [
+        {
+          "displayName": "Left Stick Y"
+        },
+        {
+          "id": "dpacs.cmd.gimbalPitch",
+          "name": "Adjust Gimble Up or Down",
+          "type": "AXIS"
+        }
+      ]
+    ],
+    "isInvertedMap": [
+      [
+        {
+          "displayName": "Left Stick X"
+        },
+        false
+      ],
+      [
+        {
+          "displayName": "Left Knob I"
+        },
+        false
+      ],
+      [
+        {
+          "displayName": "Left Stick Y"
+        },
+        false
+      ]
+    ]
+  },
+  {
+    "mode": {
+      "id": "GamepadCommandTargetSelector.SELECTION_MODE",
+      "name": "Selection"
+    },
+    "handheldType": "DACO",
+    "buttonMap": [
+      [
+        {
+          "displayName": "Button 11"
+        },
+        {
+          "id": "GamepadCommandTargetSelector.NEXT_TARGET",
+          "name": "Next target",
+          "type": "BUTTON"
+        }
+      ],
+      [
+        {
+          "displayName": "Button 9"
+        },
+        {
+          "id": "GamepadCommandTargetSelector.SELECT_TARGET",
+          "name": "Select target",
+          "type": "BUTTON"
+        }
+      ],
+      [
+        {
+          "displayName": "Button 10"
+        },
+        {
+          "id": "GamepadCommandTargetSelector.PREVIOUS_TARGET",
+          "name": "Previous target",
+          "type": "BUTTON"
+        }
+      ]
+    ],
+    "axisMap": {},
+    "isInvertedMap": {}
+  },
+  {
+    "mode": {
+      "id": "GamepadCommandTargetSelector.SELECTION_MODE",
+      "name": "Selection"
+    },
+    "handheldType": "XBOX",
+    "buttonMap": [
+      [
+        {
+          "displayName": "D-Pad Up"
+        },
+        {
+          "id": "GamepadCommandTargetSelector.PREVIOUS_TARGET",
+          "name": "Previous target",
+          "type": "BUTTON"
+        }
+      ],
+      [
+        {
+          "displayName": "A"
+        },
+        {
+          "id": "GamepadCommandTargetSelector.SELECT_TARGET",
+          "name": "Select target",
+          "type": "BUTTON"
+        }
+      ],
+      [
+        {
+          "displayName": "D-Pad Down"
+        },
+        {
+          "id": "GamepadCommandTargetSelector.NEXT_TARGET",
+          "name": "Next target",
+          "type": "BUTTON"
+        }
+      ]
+    ],
+    "axisMap": {},
+    "isInvertedMap": {}
+  },
+  {
+    "mode": {
+      "id": "com.futuretek.dpacs",
+      "name": "DPACS Mode"
+    },
     "handheldType": "SPIC",
     "buttonMap": [
       [
@@ -890,8 +1050,8 @@
           "displayName": "10"
         },
         {
-          "id": "dpacs.cmd.dayStrobe",
-          "name": "Day Strobe",
+          "id": "dpacs.cmd.irStrobe",
+          "name": "IR Night Strobe",
           "type": "BUTTON"
         }
       ],
@@ -900,8 +1060,8 @@
           "displayName": "11"
         },
         {
-          "id": "dpacs.cmd.irStrobe",
-          "name": "IR Night Strobe",
+          "id": "dpacs.cmd.dayStrobe",
+          "name": "Day Strobe",
           "type": "BUTTON"
         }
       ]
@@ -974,187 +1134,6 @@
         true
       ]
     ]
-  },
-  {
-    "mode": {
-      "id": "GamepadCommandTargetSelector.SELECTION_MODE",
-      "name": "Selection"
-    },
-    "handheldType": "DACO",
-    "buttonMap": [
-      [
-        {
-          "displayName": "Button 11"
-        },
-        {
-          "id": "GamepadCommandTargetSelector.NEXT_TARGET",
-          "name": "Next target",
-          "type": "BUTTON"
-        }
-      ],
-      [
-        {
-          "displayName": "Button 9"
-        },
-        {
-          "id": "GamepadCommandTargetSelector.SELECT_TARGET",
-          "name": "Select target",
-          "type": "BUTTON"
-        }
-      ],
-      [
-        {
-          "displayName": "Button 10"
-        },
-        {
-          "id": "GamepadCommandTargetSelector.PREVIOUS_TARGET",
-          "name": "Previous target",
-          "type": "BUTTON"
-        }
-      ]
-    ],
-    "axisMap": {},
-    "isInvertedMap": {}
-  },
-  {
-    "mode": {
-      "id": "com.futuretek.dpacs",
-      "name": "DPACS Mode"
-    },
-    "handheldType": "RC",
-    "buttonMap": [
-      [
-        {
-          "displayName": "CH7"
-        },
-        {
-          "id": "dpacs.cmd.rtl",
-          "name": "RTL Return to launch",
-          "type": "BUTTON"
-        }
-      ]
-    ],
-    "axisMap": [
-      [
-        {
-          "displayName": "Right Stick X"
-        },
-        {
-          "id": "dpacs.cmd.roll",
-          "name": "Roll",
-          "type": "AXIS"
-        }
-      ],
-      [
-        {
-          "displayName": "Righty Stick Y"
-        },
-        {
-          "id": "dpacs.cmd.pitch",
-          "name": "Pitch",
-          "type": "AXIS"
-        }
-      ],
-      [
-        {
-          "displayName": "Left Stick X"
-        },
-        {
-          "id": "dpacs.cmd.yaw",
-          "name": "Yaw",
-          "type": "AXIS"
-        }
-      ],
-      [
-        {
-          "displayName": "CH5"
-        },
-        {
-          "id": "dpacs.cmd.flightMode",
-          "name": "Flight Mode",
-          "type": "AXIS"
-        }
-      ],
-      [
-        {
-          "displayName": "Left Stick Y"
-        },
-        {
-          "id": "dpacs.cmd.throttle",
-          "name": "Throttle",
-          "type": "AXIS"
-        }
-      ],
-      [
-        {
-          "displayName": "CH6 Knob"
-        },
-        {
-          "id": "dpacs.cmd.gimbalPitch",
-          "name": "Adjust Gimble Up or Down",
-          "type": "AXIS"
-        }
-      ]
-    ],
-    "isInvertedMap": [
-      [
-        {
-          "displayName": "Right Stick X"
-        },
-        true
-      ],
-      [
-        {
-          "displayName": "Righty Stick Y"
-        },
-        false
-      ],
-      [
-        {
-          "displayName": "Left Stick X"
-        },
-        true
-      ],
-      [
-        {
-          "displayName": "CH5"
-        },
-        false
-      ],
-      [
-        {
-          "displayName": "Left Stick Y"
-        },
-        true
-      ],
-      [
-        {
-          "displayName": "CH6 Knob"
-        },
-        false
-      ]
-    ]
-  },
-  {
-    "mode": {
-      "id": "GamepadCommandTree.UNIVERSAL_MODE",
-      "name": "Universal"
-    },
-    "handheldType": "DACO",
-    "buttonMap": [
-      [
-        {
-          "displayName": "Button 8"
-        },
-        {
-          "id": "GamepadCommandTargetSelector.ENTER_SELECTION_MODE",
-          "name": "Enter selection mode",
-          "type": "BUTTON"
-        }
-      ]
-    ],
-    "axisMap": {},
-    "isInvertedMap": {}
   },
   {
     "mode": {
@@ -1322,5 +1301,26 @@
         false
       ]
     ]
+  },
+  {
+    "mode": {
+      "id": "GamepadCommandTree.UNIVERSAL_MODE",
+      "name": "Universal"
+    },
+    "handheldType": "DACO",
+    "buttonMap": [
+      [
+        {
+          "displayName": "Button 8"
+        },
+        {
+          "id": "GamepadCommandTargetSelector.ENTER_SELECTION_MODE",
+          "name": "Enter selection mode",
+          "type": "BUTTON"
+        }
+      ]
+    ],
+    "axisMap": {},
+    "isInvertedMap": {}
   }
 ]
