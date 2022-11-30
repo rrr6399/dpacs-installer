@@ -1,0 +1,8 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal() // Include public Gradle plugin portal
+        mavenLocal()
+    }
+}
+
+rootProject.name = 'Dpacs'

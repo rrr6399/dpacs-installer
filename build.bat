@@ -1,0 +1,4 @@
+gradlew clean
+rem gradlew clean build makeSeraphInstallers makeAllSeraphBundles
+rem gradlew makeSeraphInstallers makeAllSeraphBundles
+pause

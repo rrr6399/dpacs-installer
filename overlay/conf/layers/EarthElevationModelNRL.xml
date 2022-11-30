@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (C) 2012 United States Government as represented by the Administrator of the
+  ~ National Aeronautics and Space Administration.
+  ~ All Rights Reserved.
+  -->
+
+<!--$Id: EarthElevations256.xml 3087 2015-05-13 20:34:41Z dcollins $-->
+<ElevationModel version="1" modelType="Compound">
+   <DisplayName>USA 10m, World 30m, Ocean 900m NRL</DisplayName>
+    <ElevationModel version="1">
+        <DisplayName>Ocean 900m</DisplayName>
+        <Service serviceName="OGC:WCS" version="1.0.0">
+            <GetCapabilitiesURL>https://geoint.nrlssc.org/nrltileserver/wcs/blorigin?</GetCapabilitiesURL>
+            <GetCoverageURL>https://geoint.nrlssc.org/nrltileserver/wcs/blorigin</GetCoverageURL>
+            <CoverageIdentifiers>BathyTerrain</CoverageIdentifiers>
+            <!--<CoverageIdentifiers>BathyTerrain,ASTER_DEM,USGS_NED_10m</CoverageIdentifiers>-->
+        </Service>
+        <RetrievePropertiesFromService>true</RetrievePropertiesFromService>
+        <!-- day month year hours:minutes:seconds timezone -->
+        <LastUpdate>16 01 2014 20:00:00 GMT</LastUpdate>
+	<DataCacheName>geoint.nrlssc.org/_nrltileserver_wcs_blorigin/BathyTerrain</DataCacheName>
+        <ImageFormat>GeoTIFF</ImageFormat>
+        <DataType type="Int16" byteOrder="LittleEndian"/>
+        <DataDetailHint>0.20</DataDetailHint>
+        <FormatSuffix>.tif</FormatSuffix>
+        <ExtremeElevations min="-11000" max="8850">
+            <FileName>config/SRTM30Plus_ExtremeElevations_5.bil</FileName>
+        </ExtremeElevations>
+        <NumLevels count="9" numEmpty="0"/>
+        <TileOrigin>
+            <LatLon units="degrees" latitude="-90" longitude="-180"/>
+        </TileOrigin>
+        <LevelZeroTileDelta>
+            <LatLon units="degrees" latitude="20" longitude="20"/>
+        </LevelZeroTileDelta>
+        <TileSize>
+            <Dimension width="150" height="150"/>
+        </TileSize>
+        <Sector>
+            <SouthWest>
+                <LatLon units="degrees" latitude="-90" longitude="-180"/>
+            </SouthWest>
+            <NorthEast>
+                <LatLon units="degrees" latitude="90" longitude="180"/>
+            </NorthEast>
+        </Sector>
+        <RetrievalTimeouts>
+        <ReadTimeout>
+            <Time units="milliseconds" value="60000"/>
+        </ReadTimeout>
+    </RetrievalTimeouts>
+    </ElevationModel>
+    <ElevationModel version="1">
+        <DisplayName>ASTER 30m</DisplayName> <Service serviceName="OGC:WCS" version="1.0.0">
+            <GetCapabilitiesURL>https://geoint.nrlssc.org/nrltileserver/wcs/blorigin?</GetCapabilitiesURL>
+            <GetCoverageURL>https://geoint.nrlssc.org/nrltileserver/wcs/blorigin</GetCoverageURL>
+            <CoverageIdentifiers>ASTER_DEM</CoverageIdentifiers>
+            <!--<CoverageIdentifiers>BathyTerrain,ASTER_DEM,USGS_NED_10m</CoverageIdentifiers>-->
+        </Service>
+        <RetrievePropertiesFromService>true</RetrievePropertiesFromService>
+        <!-- day month year hours:minutes:seconds timezone -->
+        <LastUpdate>16 01 2014 20:00:00 GMT</LastUpdate>
+	<DataCacheName>geoint.nrlssc.org/_nrltileserver_wcs_blorigin/ASTER_DEM</DataCacheName>
+        <ImageFormat>GeoTIFF</ImageFormat>
+        <DataType type="Int16" byteOrder="LittleEndian"/>
+        <DataDetailHint>0.20</DataDetailHint>
+        <FormatSuffix>.tif</FormatSuffix>
+        <ExtremeElevations min="-11000" max="8850">
+            <FileName>config/SRTM30Plus_ExtremeElevations_5.bil</FileName>
+        </ExtremeElevations>
+        <NumLevels count="10" numEmpty="0"/>
+        <TileOrigin>
+            <LatLon units="degrees" latitude="-90" longitude="-180"/>
+        </TileOrigin>
+        <LevelZeroTileDelta>
+            <LatLon units="degrees" latitude="20" longitude="20"/>
+        </LevelZeroTileDelta>
+        <TileSize>
+            <Dimension width="150" height="150"/>
+        </TileSize>
+        <Sector>
+            <SouthWest>
+                <LatLon units="degrees" latitude="-90" longitude="-180"/>
+            </SouthWest>
+            <NorthEast>
+                <LatLon units="degrees" latitude="90" longitude="180"/>
+            </NorthEast>
+        </Sector>
+        <RetrievalTimeouts>
+        <ReadTimeout>
+            <Time units="milliseconds" value="10000"/>
+        </ReadTimeout>
+    </RetrievalTimeouts>
+    </ElevationModel>
+    <ElevationModel version="1">
+        <DisplayName>USA 10m</DisplayName>
+        <Service serviceName="OGC:WCS" version="1.0.0">
+            <GetCapabilitiesURL>https://geoint.nrlssc.org/nrltileserver/wcs/blorigin?</GetCapabilitiesURL>
+            <GetCoverageURL>https://geoint.nrlssc.org/nrltileserver/wcs/blorigin</GetCoverageURL>
+            <!--<CoverageIdentifiers>BathyTerrain,ASTER_DEM,USGS_NED_10m</CoverageIdentifiers>-->
+            <CoverageIdentifiers>USGS_NED_10m</CoverageIdentifiers>
+        </Service>
+        <RetrievePropertiesFromService>true</RetrievePropertiesFromService>
+        <!-- day month year hours:minutes:seconds timezone -->
+        <LastUpdate>16 01 2014 20:00:00 GMT</LastUpdate>
+	<DataCacheName>geoint.nrlssc.org/_nrltileserver_wcs_blorigin/USGS_NED_10m</DataCacheName>
+        <ImageFormat>GeoTIFF</ImageFormat>
+        <DataType type="Int16" byteOrder="LittleEndian"/>
+        <DataDetailHint>0.20</DataDetailHint>
+        <FormatSuffix>.tif</FormatSuffix>
+        <ExtremeElevations min="-11000" max="8850">
+            <FileName>config/SRTM30Plus_ExtremeElevations_5.bil</FileName>
+        </ExtremeElevations>
+        <NumLevels count="12" numEmpty="0"/>
+        <TileOrigin>
+            <LatLon units="degrees" latitude="-90" longitude="-180"/>
+        </TileOrigin>
+        <LevelZeroTileDelta>
+            <LatLon units="degrees" latitude="20" longitude="20"/>
+        </LevelZeroTileDelta>
+        <TileSize>
+            <Dimension width="150" height="150"/>
+        </TileSize>
+        <Sector>
+            <SouthWest>
+                <LatLon units="degrees" latitude="-17.182222221901824" longitude="-173.93185185182514"/>
+            </SouthWest>
+            <NorthEast>
+                <LatLon units="degrees" latitude="55.635555556196366" longitude="165.88444444596632"/>
+            </NorthEast>
+        </Sector>
+        <RetrievalTimeouts>
+        <ReadTimeout>
+            <Time units="milliseconds" value="60000"/>
+        </ReadTimeout>
+    </RetrievalTimeouts>
+    </ElevationModel>
+</ElevationModel>

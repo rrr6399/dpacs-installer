@@ -1,0 +1,157 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        maven {
+            url = "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath 'gov.raptor.gradle.plugins:InstallerSupportPlugin:0.6.10'
+    }
+}
+
+wrapper {
+    gradleVersion = '5.4.1'
+}
+
+ext {
+    rootBranch = 'master'
+}
+
+apply plugin: 'gov.raptor.gradle.plugins.installer-support'
+
+buildSupport.repoManagement {
+    di2eRaptorx publish: false
+    di2ePrivate name: 'RP', publish: false
+    di2ePrivate name: 'VOLTRON', publish: true
+}
+
+buildOverlay {
+
+    // Configure the documentation files to include
+    includeDocumentation 'GRG_Manual'
+    includeDocumentation 'High_Low_Manual'
+    includeDocumentation 'RaptorX_Supported_Formats'
+    includeDocumentation 'RaptorX_Technical_Appendix'
+    includeDocumentation 'Route_Planning_Manual'
+
+    includeDocumentation 'Sandbar_Help_File'
+    includeDocumentation 'Sandbar_Technical_Appendix'
+
+    includeDocumentation 'Seraph_User_Manual', '2.7.1'
+
+    doLast {
+        // We need to extract the Sandbar data folder into our target directory
+        extractFromPluginJar 'deployedPlugins', 'plugin.sandbar', 'data/**'
+    }
+}
+
+installer('voltronApi') {
+}
+
+installer('seraph') {
+}
+
+installer('ampere') {
+
+    nexusArtifact 'empire', 'gov:empire:8.3.3.2@zip'
+
+    doLast {
+        // Copy empire.zip to overlay
+        project.copy {
+            from project.configurations['empire'].singleFile
+            into "$overlayBuildDir"
+        }
+    }
+}
+
+// Now configure our deployed plugins
+
+ext {
+    voltronPluginVersion = '2.7.1'
+    sandbarPluginVersion = '2.32-SNAPSHOT'
+
+    // A map from artifact coordinates to the version to include
+    pluginVersions = [
+            // Raptor Plugins
+            'gov.raptor.plugins:plugin.freedraw'                                     : '2.0.2',
+            'gov.raptor.plugins:plugin.grg'                                          : '1.2.9',
+            'gov.raptor.plugins:plugin.highlow'                                      : '1.1.2',
+            'gov.raptor.plugins:plugin.jide'                                         : '1.3.1',
+            'gov.raptor.plugins:plugin.lineofsight'                                  : '1.3.0',
+            'gov.raptor.plugins:plugin.media.analysis'                               : '2.4.1',
+            'gov.raptor.plugins:plugin.media'                                        : '2.1.2',
+            //'gov.raptor.plugins:plugin.r2d2chat'                                   : '0.0.6-RC1',
+            'gov.raptor.plugins:plugin.rdmfilter'                                    : '2.1.1',
+            'gov.raptor.plugins:plugin.sectorselector'                               : '1.2.1',
+            'gov.raptor.plugins:plugin.smarttracks'                                  : '1.2.0',
+            'gov.raptor.plugins:plugin.virtualprotractor'                            : '1.1.7',
+
+            'gov.raptor.plugins:plugin.charts'                                       : '1.0.1',
+
+            // Voltron Core Plugins
+            'gov.raptor.voltron.core:plugin.voltron.accesspoint'                     : voltronPluginVersion,
+            'gov.raptor.voltron.core:plugin.seraph.api'                              : voltronPluginVersion,
+            'gov.raptor.voltron.core:plugin.voltron.celltower'                       : voltronPluginVersion,
+            'gov.raptor.voltron.core:plugin.voltron.detectionpoint'                  : voltronPluginVersion,
+            'gov.raptor.voltron.core:plugin.voltron.devices'                         : voltronPluginVersion,
+            'gov.raptor.voltron.core:plugin.seraph.df'                               : voltronPluginVersion,
+            'gov.raptor.voltron.core:plugin.voltron.dfobjectimporter'                : voltronPluginVersion,
+            'gov.raptor.voltron.core:plugin.voltron.networksurveygeopackage'         : voltronPluginVersion,
+            'gov.raptor.voltron.core:plugin.voltron.pmdb'                            : voltronPluginVersion,
+            'gov.raptor.voltron.core:plugin.voltron.statistics'                      : voltronPluginVersion,
+            'gov.raptor.voltron.core:plugin.voltron.basestation'                     : voltronPluginVersion,
+            'gov.raptor.voltron.core:plugin.voltron.client'                          : voltronPluginVersion,
+
+            // Seraph Plugins
+            'gov.raptor.voltron.plugins:plugin.voltron.calculators'                  : voltronPluginVersion,
+            'gov.raptor.voltron.plugins:plugin.voltron.gns'                          : voltronPluginVersion,
+            'gov.raptor.voltron.plugins:plugin.voltron.ics'                          : voltronPluginVersion,
+            'gov.raptor.voltron.plugins:plugin.voltron.jon'                          : voltronPluginVersion,
+            'gov.raptor.voltron.plugins:plugin.voltron.nemo'                         : voltronPluginVersion,
+            'gov.raptor.voltron.plugins:plugin.voltron.pcap'                         : voltronPluginVersion,
+            'gov.raptor.voltron.plugins:plugin.voltron.rns'                          : voltronPluginVersion,
+            'gov.raptor.voltron.plugins:plugin.voltron.tetly'                        : voltronPluginVersion,
+            'gov.raptor.voltron.plugins:plugin.voltron.tlc'                          : voltronPluginVersion,
+
+            'gov.raptor.voltron.plugins:plugin.voltron.drt'                          : '2.4.7',
+            'gov.raptor.voltron.plugins:plugin.voltron.drt.hawaii'                   : '0.9.1',
+      
+            'gov.raptor.voltron.plugins:beast-plugin'                                : '1.0.0',
+            'gov.raptor.pluginlib:pluginlib.raptor.object-connection-template'       : '1.2.2',
+
+            'com.chesapeaketechnology.voltron.plugins:plugin.voltron.gnss-geopackage': '0.1.0',
+            'com.chesapeaketechnology.voltron.plugins:plugin.voltron.networksurvey'  : '0.2.0',
+
+            'gov.raptor.plugins:plugin.sandbar'                                      : sandbarPluginVersion,
+    ]
+
+    voltronApiPluginVersions = [
+            'gov.raptor.voltron.core:plugin.voltron.vdt'           : voltronPluginVersion,
+            //'gov.raptor.seraph.plugins:plugin.seraph.gnettrack'   : voltronPluginVersion,
+            'gov.raptor.voltron.plugins:plugin.voltron.icarus'     : voltronPluginVersion,
+            'gov.raptor.voltron.plugins:plugin.voltron.voltrondemo': voltronPluginVersion,
+            'gov.raptor.plugins:plugin.entity'                     : '1.0.0',
+
+            'gov.raptor.seraph.plugins:plugin.seraph.sidekiq'      : '1.4.1',
+    ]
+
+    seraphPluginVersions = [
+            'com.entropix:plugin.corsair'                  : '3.0.3',
+            'com.ws.envoy:plugin.envoy'                    : '0.9.7',
+
+            'gov.raptor.plugins:plugin.imagery-replacement': '0.0.5',
+    ]
+
+    amperePluginVersions = [
+            // Ampere plugins
+            'com.chesapeaketechnology.ampere:plugin.spectrumassignment': '1.2.0',
+            'com.chesapeaketechnology.ampere:plugin.spectralfootprint' : '2.0.0',
+            'com.chesapeaketechnology.ampere:plugin.spectrumentity'    : '1.2.0',
+            'com.chesapeaketechnology.rfpropagation:RF-Propagation'    : '2.0.4',
+
+            // Navy plugins
+            'mil.navy.spawar:plugin.cib'                               : '1.1.1',
+            'mil.navy.spawar:plugin.spawar.api'                        : '1.1.1',
+    ]
+}

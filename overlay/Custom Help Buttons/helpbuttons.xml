@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns1:buttons xmlns:ns1="http://www.doe.gov/2011/ButtonSchema"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://www.doe.gov/2011/ButtonSchema schema/helpbuttons.xsd">
+    <button>
+        <name>DPACS Help</name>
+        <description>DPACS Manual</description>
+        <icon>dpacs.png</icon>
+        <target>
+            <file>docs/DPACS_Plugin_Instructions.pdf</file>
+        </target>
+    </button>
+    <button>
+        <name>Seraph Help</name>
+        <description>Seraph Manual</description>
+        <icon>seraph.png</icon>
+        <target>
+            <file>docs/Seraph_User_Manual.pdf</file>
+        </target>
+    </button>
+    <button>
+        <name>Sandbar Help</name>
+        <description>Sandbar Help</description>
+        <icon>Sandbar.png</icon>
+        <target>
+            <file>docs/Sandbar_Help_File.pdf</file>
+        </target>
+    </button>
+    <button>
+        <name>Sandbar T.A.</name>
+        <description>Sandbar Technical Appendix</description>
+        <icon>Sandbar.png</icon>
+        <target>
+            <file>docs/Sandbar_Technical_Appendix.pdf</file>
+        </target>
+    </button>
+    <button>
+        <name>GRG Grid Help</name>
+        <description>GRG Manual</description>
+        <icon>GRG.png</icon>
+        <target>
+            <file>docs/GRG_Manual.pdf</file>
+        </target>
+    </button>
+    <button>
+        <name>Route Planning</name>
+        <description>Route Planning Manual</description>
+        <icon>VPPlanningTool.png</icon>
+        <target>
+            <file>docs/Route_Planning_Manual.pdf</file>
+        </target>
+    </button>
+    <button>
+        <name>High Low Help</name>
+        <description>High Low Manual</description>
+        <icon>HighPointLowPoint.png</icon>
+        <target>
+            <file>docs/High_Low_Manual.pdf</file>
+        </target>
+    </button>
+    <button>
+        <name>Supported Formats</name>
+        <description>RaptorX Supported Formats</description>
+        <icon>FileAttachment.png</icon>
+        <target>
+            <file>docs/RaptorX_Supported_Formats.pdf</file>
+        </target>
+    </button>
+</ns1:buttons>

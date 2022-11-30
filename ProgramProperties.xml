@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE preferences SYSTEM "http://java.sun.com/dtd/preferences.dtd">
+<preferences EXTERNAL_XML_VERSION="1.0">
+  <root type="user">
+    <map/>
+    <node name="rx">
+      <map/>
+      <node name="program">
+        <map>
+          <entry key="TimeServerHost" value="time.nist.gov"/>
+          <entry key="pedestalColorUsesMapObjectColor" value="true"/>
+          <entry key="defaultWMSOfflineMode" value="false"/>
+          <entry key="Name" value="RaptorX"/>
+          <entry key="MissingElevationIndicator" value="N/A"/>
+          <entry key="DatabasePluginFamily" value="gov.raptor.Postgres"/>
+          <entry key="maxActiveAltitude" value="200000.0"/>
+          <entry key="DisableKeyboardGlobeNavigation" value="false"/>
+          <entry key="DefaultRightPanel" value="Properties"/>
+          <entry key="enableExplorerGroupsView" value="true"/>
+          <entry key="EnableCommLogging" value="false"/>
+          <entry key="DatabasePluginType" value="PostgreSQL"/>
+          <entry key="DefaultLeftPanel" value="Layers"/>
+          <entry key="NavLockRibbonButtonVisible" value="true"/>
+          <entry key="maxVisibleSystemMessages" value="200"/>
+          <entry key="useProjectExplorer" value="true"/>
+          <entry key="useMaximumWindowBounds" value="false"/>
+          <entry key="CalculateMotionDuration" value="false"/>
+          <entry key="RemoteProcessManagerBasePort" value="5000"/>
+          <entry key="ApplicationTitle" value="Seraph 2.6.1-SNAPSHOT - RaptorX"/>
+          <entry key="tooltipFontSize" value="-1"/>
+          <entry key="MinHUDDataMonitorState" value="Warning"/>
+          <entry key="defaultImageryNumLevels" value="14"/>
+          <entry key="checkScreenConfig" value="true"/>
+          <entry key="NODE_UUID" value="86343dc2-4916-11ea-8a63-005056c00001"/>
+          <entry key="frameBuffering" value="on"/>
+          <entry key="enableExplorerAlarmsView" value="true"/>
+          <entry key="ribbonBarHeight" value="35"/>
+          <entry key="openPropertiesPanelOnShapeDrawing" value="true"/>
+          <entry key="mapObjectTooltipsAlwaysOn" value="false"/>
+          <entry key="DisabledPropertyMessages" value="ELEVATION_MODE,CENTER_ON,HIGHEST_STATE,ICON_SCALE,SECURITY_FILTER_LEVEL,VISIBILITY"/>
+          <entry key="maxVisibleTrackPoints" value="2000"/>
+          <entry key="CenterGlobeOnClickCount" value="1"/>
+          <entry key="maxSurfaceImageDimension" value="1024"/>
+          <entry key="localTimeZone" value="America/Chicago"/>
+          <entry key="RDMBatching" value="true"/>
+          <entry key="splitScale" value="0.5"/>
+          <entry key="enableExplorerObjectsView" value="true"/>
+          <entry key="defaultToNewProjectOnStart" value="true"/>
+          <entry key="DatabaseConfig" value="core"/>
+          <entry key="DisablePKIPreferences" value="true"/>
+          <entry key="useNewExplorerPanel" value="true"/>
+          <entry key="enableSetFetchSize" value="true"/>
+          <entry key="maxEventLogTableRows" value="1000"/>
+          <entry key="LastProjectsDir" value="C:\ProgramData\Seraph-2.6.1-SNAPSHOT\ProjectData\Projects"/>
+          <entry key="DefaultProjectPreferences" value="conf/DefaultProjectPreferences.xml"/>
+          <entry key="DefaultUserPreferences" value="conf/DefaultUserPreferences.xml"/>
+          <entry key="disableLargeShapefileImporter" value="false"/>
+          <entry key="Serialio" value="version 10.2.3: build 9233"/>
+          <entry key="autoReconnectConnections" value="false"/>
+          <entry key="defaultElevationNumLevels" value="15"/>
+          <entry key="DefaultUserName" value="Default"/>
+          <entry key="minActiveAltitude" value="-1.0"/>
+          <entry key="EnableExternalSimulator" value="false"/>
+          <entry key="DisableCenterGlobeOnClick" value="true"/>
+          <entry key="DisableMouseGlobeNavigation" value="false"/>
+          <entry key="enableExplorerPluginPersist" value="false"/>
+          <entry key="enableEventLog" value="false"/>
+          <entry key="enable2DKMLShapeImportAsStructure" value="true"/>
+        </map>
+        <node name="Configuration">
+          <map>
+            <entry key="MapObjectPreferencesDialog/Security" value="visible"/>
+            <entry key="MapObjectPopupMenu/Center On" value="visible"/>
+            <entry key="MapObjectPopupMenu/Simulation Configuration" value="visible"/>
+            <entry key="MapObjectPopupMenu/Undo Last User Move" value="visible"/>
+            <entry key="MapObjectPopupMenu/Go To" value="visible"/>
+            <entry key="PreferencesDialog/Quick Access" value="visible"/>
+            <entry key="PreferencesDialog/Audio" value="visible"/>
+            <entry key="MapObjectPopupMenu/Deactivate" value="visible"/>
+            <entry key="MapObjectPreferencesDialog/Tracks" value="visible"/>
+            <entry key="MapObjectPreferencesDialog/Custom Alarms" value="visible"/>
+            <entry key="MapObjectPopupMenu/Editable" value="visible"/>
+            <entry key="MapObjectPopupMenu/Show" value="visible"/>
+            <entry key="PreferencesDialog/Display" value="visible"/>
+            <entry key="PreferencesDialog/Tracks" value="visible"/>
+            <entry key="MapObjectPopupMenu/Preferences" value="visible"/>
+            <entry key="MapObjectPopupMenu/Open" value="visible"/>
+            <entry key="MapObjectPopupMenu/Device Log" value="visible"/>
+            <entry key="PreferencesDialog/Files" value="visible"/>
+            <entry key="MapObjectPopupMenu/Hide" value="visible"/>
+            <entry key="MapObjectPopupMenu/Help" value="visible"/>
+            <entry key="MapObjectPopupMenu/Suppress" value="visible"/>
+            <entry key="MapObjectPreferencesDialog/General" value="visible"/>
+            <entry key="MapObjectPopupMenu/Delete" value="visible"/>
+            <entry key="MapObjectPopupMenu/Configure" value="visible"/>
+            <entry key="PreferencesDialog/Networking" value="visible"/>
+            <entry key="MapObjectPopupMenu/Clear Alarms" value="visible"/>
+            <entry key="PreferencesDialog/Security" value="visible"/>
+            <entry key="MapObjectPopupMenu/Keep In View" value="visible"/>
+            <entry key="MapObjectPreferencesDialog/Visual" value="visible"/>
+            <entry key="flamingo.api.common.JCommandButton_Launch TerraRaptor" value="invisible"/>
+          </map>
+        </node>
+        <node name="DockingFrames">
+          <map>
+            <entry key="FrameMaximizationEnabled" value="true"/>
+            <entry key="DragAndDropToExternalizeEnabled" value="false"/>
+            <entry key="GlobeMinimizationEnabled" value="false"/>
+            <entry key="MinimizeAreasEnabled" value="true"/>
+            <entry key="MaximizeOnDoubleClickEnabled" value="false"/>
+          </map>
+        </node>
+        <node name="KnownProjectDirectories">
+          <map>
+            <entry key="0" value="C:\ProgramData\Seraph-2.6.1-SNAPSHOT\ProjectData\Projects"/>
+          </map>
+        </node>
+        <node name="ProtectedIconGroups">
+          <map>
+            <entry key="Legends" value="true"/>
+            <entry key="Misc" value="true"/>
+            <entry key="Posts" value="true"/>
+            <entry key="Flags" value="true"/>
+            <entry key="PushPins" value="true"/>
+            <entry key="Forces" value="true"/>
+            <entry key="Vehicles" value="true"/>
+          </map>
+        </node>
+        <node name="R2D2">
+          <map>
+            <entry key="serverPrivateKeyUrl" value=""/>
+            <entry key="lostConnectionTimeout" value="10"/>
+            <entry key="LastServer" value="localhost"/>
+            <entry key="MaxFileTransfers" value="10"/>
+            <entry key="reconnectInterval" value="5"/>
+            <entry key="serverPrivateKeyPassword" value=""/>
+            <entry key="autoSubscribe" value="none"/>
+            <entry key="closeTimeout" value="120"/>
+            <entry key="dumpBufferContent" value="false"/>
+            <entry key="MessageHandlingOnMissingPlugin" value="drop"/>
+            <entry key="serverPort" value="10000"/>
+            <entry key="caCertUrl" value=""/>
+            <entry key="nodeInfoInterval" value="10"/>
+            <entry key="serverEnabled" value="true"/>
+            <entry key="serverBindAddress" value="0.0.0.0"/>
+            <entry key="FileChunkSize" value="65536"/>
+            <entry key="logEvents" value="true"/>
+            <entry key="reconnectAttempts" value="10"/>
+            <entry key="readTimeout" value="10"/>
+            <entry key="secureConnection" value="false"/>
+          </map>
+          <node name="PublishPluginShapes">
+            <map/>
+          </node>
+          <node name="Servers">
+            <map>
+              <entry key="localhost" value="127.0.0.1:10000"/>
+            </map>
+          </node>
+        </node>
+        <node name="RecentProjects">
+          <map>
+            <entry key="2020_02_06_19_28_20" value="C:\ProgramData\Seraph-2.6.1-SNAPSHOT\ProjectData\Projects\2020_02_06_13_26_35\2020_02_06_13_26_35.projx"/>
+          </map>
+        </node>
+        <node name="RibbonBarConfiguration">
+          <map>
+            <entry key="ActiveConfiguration" value="Default"/>
+            <entry key="DisplayDefaultConfiguration" value="false"/>
+          </map>
+        </node>
+        <node name="Skins">
+          <map>
+            <entry key="Blue Steel" value="BusinessBlueSteelSkin.class"/>
+            <entry key="Black Steel" value="BusinessBlackSteelSkin.class"/>
+            <entry key="High Contrast Magma" value="MagmaSkin.class"/>
+            <entry key="Default Raptor Skin" value="DefaultRaptorSkin.class"/>
+            <entry key="Dark Gray on Light Gray" value="MistAquaSkin.class"/>
+          </map>
+        </node>
+        <node name="StructureRelationshipTypes">
+          <map>
+            <entry key="Sees" value="Can be seen by"/>
+            <entry key="Owns" value="Is owned by"/>
+          </map>
+        </node>
+        <node name="TRDS">
+          <map/>
+        </node>
+        <node name="TrackDetailLevels">
+          <map>
+            <entry key="high" value="10000"/>
+            <entry key="low" value="2000"/>
+            <entry key="medium" value="5000"/>
+          </map>
+        </node>
+        <node name="TrackRendering">
+          <map>
+            <entry key="primaryRenderingMode" value="TopDown"/>
+          </map>
+        </node>
+        <node name="apps">
+          <map>
+            <entry key="enabled" value="true"/>
+          </map>
+          <node name="configuration">
+            <map>
+              <entry key="gov.raptor.seraph/Voltron Calculators" value="background"/>
+              <entry key="gov.raptor.seraph/Voltron TLC" value="background"/>
+              <entry key="com.futuretek.dpacs/DPACS" value="background"/>
+              <entry key="gov.raptor.seraph/Voltron PM Control" value="background"/>
+              <entry key="gov.raptor.imageryreplacement/Imagery Replacement" value="start"/>
+              <entry key="gov.raptor.seraph/Voltron Target App" value="background"/>
+              <entry key="gov.raptor.seraph/Voltron Access Point App" value="background"/>
+              <entry key="gov.raptor.FreeDraw/FreeDrawApp" value="background"/>
+              <entry key="gov.raptor.media.analysis/MediaAnalysisApp" value="start"/>
+              <entry key="gov.raptor.helpbuttons/Help Buttons" value="background"/>
+              <entry key="gov.raptor.lineOfSight/Line Of Sight App" value="background"/>
+              <entry key="gov.raptor.highlow/High Low Tool App" value="background"/>
+              <entry key="gov.raptor.VirtualProtractor/VirtualProtractorApp" value="background"/>
+              <entry key="gov.raptor.seraph/Voltron Emitter App" value="background"/>
+              <entry key="gov.raptor.seraph/Voltron Summary Statistics" value="background"/>
+              <entry key="gov.raptor.smarttracks/Track Analytics" value="background"/>
+              <entry key="gov.raptor.seraph/Voltron Cell Tower App" value="background"/>
+              <entry key="Gamepad/Gamepad" value="background"/>
+              <entry key="gov.raptor.grg/GRG App" value="background"/>
+              <entry key="gov.raptor.sandbar/Sandbar" value="background"/>
+            </map>
+          </node>
+        </node>
+        <node name="gov.raptor.core.view.gui.AppFrame">
+          <map>
+            <entry key="appsToggleButton" value="disabled"/>
+          </map>
+        </node>
+        <node name="gov.raptor.core.view.gui.IconPanel">
+          <map/>
+        </node>
+        <node name="gov.raptor.core.view.gui.connections.ConnectionsPanel">
+          <map/>
+        </node>
+        <node name="gov.raptor.core.view.gui.eventlog.EventLogPanel">
+          <map/>
+        </node>
+        <node name="gov.raptor.core.view.gui.eventlog.PropertiesPanel">
+          <map/>
+        </node>
+        <node name="gov.raptor.core.view.gui.favorites.FavoritesPanel">
+          <map/>
+        </node>
+        <node name="gov.raptor.core.view.gui.layers.LayerPanel">
+          <map/>
+        </node>
+        <node name="gov.raptor.core.view.gui.mapobjectmanager.MapObjectsPanel">
+          <map/>
+        </node>
+        <node name="gov.raptor.core.view.gui.maptools.AnnotationPanel">
+          <map/>
+        </node>
+        <node name="gov.raptor.core.view.gui.maptools.DrawingToolsPanel">
+          <map/>
+        </node>
+        <node name="gov.raptor.core.view.gui.maptools.MapToolsPanel">
+          <map/>
+        </node>
+        <node name="gov.raptor.core.view.gui.maptools.ShapesPanel">
+          <map/>
+        </node>
+        <node name="suppressedMapObjects">
+          <map/>
+        </node>
+        <node name="viewLimits">
+          <map/>
+        </node>
+        <node name="windowSettings">
+          <map>
+            <entry key="windowBoundsX" value="0"/>
+            <entry key="windowBoundsH" value="1080"/>
+            <entry key="windowBoundsW" value="1920"/>
+            <entry key="saveWindowSettings" value="true"/>
+            <entry key="windowBoundsY" value="0"/>
+          </map>
+        </node>
+      </node>
+    </node>
+  </root>
+</preferences>
