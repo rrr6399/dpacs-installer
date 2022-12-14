@@ -70,7 +70,7 @@ ext {
             'gov.raptor.plugins:plugin.virtualprotractor'        : '1.1.7',
             'gov.raptor.plugins:plugin.sandbar'                  : '2.33.1-SNAPSHOT',
             'gov.raptor.plugins:plugin.charts'	                 : '1.0.2',
-            'gov.raptor.plugins:mil2525icons'	                 : '2.1.1-SNAPSHOT',
+            'gov.raptor.plugins:mil2525icons'	                 : '2.1.2',
 
     ]
 
