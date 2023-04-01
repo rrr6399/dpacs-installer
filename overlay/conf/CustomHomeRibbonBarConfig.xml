@@ -104,6 +104,10 @@
                             <pluginUniqueKey>DPACS</pluginUniqueKey>
                         </button>
                         <button>
+                            <name>Connect GCS</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                        <button>
                             <name>Connect RTK GPS</name>
                             <pluginUniqueKey>DPACS</pluginUniqueKey>
                         </button>
@@ -125,6 +129,10 @@
                         </button>
                         <button>
                             <name>Ground RTK GPS</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                        <button>
+                            <name>Follow Me</name>
                             <pluginUniqueKey>DPACS</pluginUniqueKey>
                         </button>
                         <button>
@@ -855,6 +863,10 @@
                             <name>Gamepad</name>
                             <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
                         </button>
+                        <button>
+                            <name>Follow Me</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
                     </buttons>
                     <excludedButtons>
                         <excludedButton>
@@ -911,7 +923,7 @@
                 <band>
                     <name>Bottom</name>
                     <raptorBandId>APPS_BOTTOM_PANELS</raptorBandId>
-                    <isVisible>false</isVisible>
+                    <isVisible>true</isVisible>
                     <buttons>
                         <button>
                             <name>Plots</name>
