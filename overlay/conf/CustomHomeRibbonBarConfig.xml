@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <ribbonBarConfiguration>
-    <name>Default</name>
+    <name>Menet Aero Static Tethered Copter Mission</name>
     <isEditable>true</isEditable>
     <isRibbonMinimized>false</isRibbonMinimized>
     <tasks>
@@ -8,7 +8,7 @@
             <name>Home</name>
             <raptorTaskId>HOME</raptorTaskId>
             <isVisible>true</isVisible>
-            <isHiddenByUser>false</isHiddenByUser>
+            <isHiddenByUser>true</isHiddenByUser>
             <bands>
                 <band>
                     <name>Left Panel</name>
@@ -34,10 +34,6 @@
                         <button>
                             <name>Media</name>
                             <raptorButtonId>MEDIA_MANAGE_MEDIA</raptorButtonId>
-                        </button>
-                        <button>
-                            <name>R2-D2</name>
-                            <raptorButtonId>CONNECT_MANAGE_R2D2_CONNECTIONS</raptorButtonId>
                         </button>
                         <button>
                             <name>Files</name>
@@ -71,10 +67,6 @@
                             <name>Properties</name>
                             <raptorButtonId>HOME_RIGHT_PANEL_PROPERTIES</raptorButtonId>
                         </button>
-                        <button>
-                            <name>File Transfers</name>
-                            <raptorButtonId>HOME_RIGHT_PANEL_FILE_TRANSFERS</raptorButtonId>
-                        </button>
                     </buttons>
                     <excludedButtons/>
                 </band>
@@ -97,6 +89,90 @@
             </bands>
         </task>
         <task>
+            <name>DPACS</name>
+            <isVisible>true</isVisible>
+            <isHiddenByUser>false</isHiddenByUser>
+            <pluginUniqueKey>DPACS</pluginUniqueKey>
+            <bands>
+                <band>
+                    <name>Connect</name>
+                    <isVisible>true</isVisible>
+                    <pluginUniqueKey>DPACS</pluginUniqueKey>
+                    <buttons>
+                        <button>
+                            <name>Connect Drone</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                        <button>
+                            <name>Connect GCS</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                        <button>
+                            <name>Connect RTK GPS</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                        <button>
+                            <name>Gamepad</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+                <band>
+                    <name>Status and Control</name>
+                    <isVisible>true</isVisible>
+                    <pluginUniqueKey>DPACS</pluginUniqueKey>
+                    <buttons>
+                        <button>
+                            <name>Simple Pilot Controls</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                        <button>
+                            <name>Ground RTK GPS</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                        <button>
+                            <name>Follow Me</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                        <button>
+                            <name>Motor Test</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                        <button>
+                            <name>Next Vision Camera</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                        <button>
+                            <name>EKF Status</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                        <button>
+                            <name>Vibration Status</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                        <button>
+                            <name>Status</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                        <button>
+                            <name>Plots</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                        <button>
+                            <name>Calculate LOS</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                        <button>
+                            <name>Edit Preferences</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+            </bands>
+        </task>
+        <task>
             <name>Connect</name>
             <raptorTaskId>CONNECT</raptorTaskId>
             <isVisible>true</isVisible>
@@ -111,10 +187,6 @@
                             <name>Connections</name>
                             <raptorButtonId>CONNECT_MANAGE_CONNECTIONS</raptorButtonId>
                         </button>
-                        <button>
-                            <name>R2-D2</name>
-                            <raptorButtonId>CONNECT_MANAGE_R2D2_CONNECTIONS</raptorButtonId>
-                        </button>
                     </buttons>
                     <excludedButtons/>
                 </band>
@@ -123,18 +195,6 @@
                     <raptorBandId>CONNECT_CONNECTIONS</raptorBandId>
                     <isVisible>true</isVisible>
                     <buttons>
-                        <button>
-                            <name>Serial/USB</name>
-                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
-                        </button>
-                        <button>
-                            <name>TCP-IP Server</name>
-                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
-                        </button>
-                        <button>
-                            <name>TCP-IP Client</name>
-                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
-                        </button>
                         <button>
                             <name>CoT Publish</name>
                             <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
@@ -148,48 +208,65 @@
                             <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
                         </button>
                         <button>
-                            <name>DPACS</name>
-                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
-                        </button>
-                        <button>
                             <name>File</name>
                             <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
                         </button>
                         <button>
-                            <name>GPS Client</name>
-                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
-                        </button>
-                        <button>
-                            <name>GPS Server</name>
-                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
-                        </button>
-                        <button>
-                            <name>GeoRSS II</name>
-                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
-                        </button>
-                        <button>
-                            <name>RTK GPS Connection</name>
-                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
-                        </button>
-                        <button>
-                            <name>USB GPS</name>
+                            <name>DPACS Connection</name>
                             <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
                         </button>
                     </buttons>
-                    <excludedButtons/>
+                    <excludedButtons>
+                        <excludedButton>
+                            <name>Serial/USB</name>
+                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>TCP-IP Server</name>
+                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>TCP-IP Client</name>
+                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>GPS Client</name>
+                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>GPS Server</name>
+                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>GeoRSS II</name>
+                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>USB GPS</name>
+                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>DPACS</name>
+                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>RTK GPS Connection</name>
+                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                    </excludedButtons>
                 </band>
             </bands>
         </task>
         <task>
             <name>Devices</name>
             <raptorTaskId>DEVICES</raptorTaskId>
-            <isVisible>true</isVisible>
-            <isHiddenByUser>false</isHiddenByUser>
+            <isVisible>false</isVisible>
+            <isHiddenByUser>true</isHiddenByUser>
             <bands>
                 <band>
                     <name>Manage</name>
                     <raptorBandId>DEVICES_MANAGE</raptorBandId>
-                    <isVisible>true</isVisible>
+                    <isVisible>false</isVisible>
                     <buttons>
                         <button>
                             <name>Devices</name>
@@ -201,7 +278,7 @@
                 <band>
                     <name>Devices</name>
                     <raptorBandId>DEVICES_DEVICES</raptorBandId>
-                    <isVisible>true</isVisible>
+                    <isVisible>false</isVisible>
                     <buttons>
                         <button>
                             <name>DPACS</name>
@@ -224,36 +301,37 @@
                             <raptorButtonId>DEVICES_DEVICES_PLUGIN</raptorButtonId>
                         </button>
                         <button>
-                            <name>Receiver</name>
-                            <raptorButtonId>DEVICES_DEVICES_PLUGIN</raptorButtonId>
-                        </button>
-                        <button>
-                            <name>Repeater</name>
-                            <raptorButtonId>DEVICES_DEVICES_PLUGIN</raptorButtonId>
-                        </button>
-                        <button>
-                            <name>TMRS2 GCS</name>
-                            <raptorButtonId>DEVICES_DEVICES_PLUGIN</raptorButtonId>
-                        </button>
-                        <button>
-                            <name>TMRS2 UAV</name>
-                            <raptorButtonId>DEVICES_DEVICES_PLUGIN</raptorButtonId>
-                        </button>
-                        <button>
                             <name>Tractor Beam</name>
                             <raptorButtonId>DEVICES_DEVICES_PLUGIN</raptorButtonId>
                         </button>
-                        <button>
+                    </buttons>
+                    <excludedButtons>
+                        <excludedButton>
+                            <name>Receiver</name>
+                            <raptorButtonId>DEVICES_DEVICES_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>Repeater</name>
+                            <raptorButtonId>DEVICES_DEVICES_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>TMRS2 GCS</name>
+                            <raptorButtonId>DEVICES_DEVICES_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>TMRS2 UAV</name>
+                            <raptorButtonId>DEVICES_DEVICES_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
                             <name>Transmitter</name>
                             <raptorButtonId>DEVICES_DEVICES_PLUGIN</raptorButtonId>
-                        </button>
-                    </buttons>
-                    <excludedButtons/>
+                        </excludedButton>
+                    </excludedButtons>
                 </band>
                 <band>
                     <name>Tools</name>
                     <raptorBandId>DEVICES_TOOLS</raptorBandId>
-                    <isVisible>true</isVisible>
+                    <isVisible>false</isVisible>
                     <buttons>
                         <button>
                             <name>Suppressed Devices</name>
@@ -379,13 +457,13 @@
         <task>
             <name>Attachments</name>
             <raptorTaskId>ATTACHMENTS</raptorTaskId>
-            <isVisible>true</isVisible>
-            <isHiddenByUser>false</isHiddenByUser>
+            <isVisible>false</isVisible>
+            <isHiddenByUser>true</isHiddenByUser>
             <bands>
                 <band>
                     <name>Manage</name>
                     <raptorBandId>ATTACHMENTS_MANAGE</raptorBandId>
-                    <isVisible>true</isVisible>
+                    <isVisible>false</isVisible>
                     <buttons>
                         <button>
                             <name>Files</name>
@@ -397,7 +475,7 @@
                 <band>
                     <name>Media</name>
                     <raptorBandId>ATTACHMENTS_MEDIA</raptorBandId>
-                    <isVisible>true</isVisible>
+                    <isVisible>false</isVisible>
                     <buttons>
                         <button>
                             <name>Audio</name>
@@ -417,7 +495,7 @@
                 <band>
                     <name>Other</name>
                     <raptorBandId>ATTACHMENTS_OTHER</raptorBandId>
-                    <isVisible>true</isVisible>
+                    <isVisible>false</isVisible>
                     <buttons>
                         <button>
                             <name>File</name>
@@ -437,7 +515,7 @@
                 <band>
                     <name>Forms</name>
                     <raptorBandId>ATTACHMENTS_FORMS</raptorBandId>
-                    <isVisible>true</isVisible>
+                    <isVisible>false</isVisible>
                     <buttons/>
                     <excludedButtons/>
                 </band>
@@ -455,18 +533,6 @@
                     <isVisible>true</isVisible>
                     <buttons>
                         <button>
-                            <name>Antenna</name>
-                            <raptorButtonId>DATA_IMPORT_IMPORT_PLUGIN</raptorButtonId>
-                        </button>
-                        <button>
-                            <name>Bulk Rx</name>
-                            <raptorButtonId>DATA_IMPORT_IMPORT_PLUGIN</raptorButtonId>
-                        </button>
-                        <button>
-                            <name>Bulk Tx</name>
-                            <raptorButtonId>DATA_IMPORT_IMPORT_PLUGIN</raptorButtonId>
-                        </button>
-                        <button>
                             <name>CSV</name>
                             <raptorButtonId>DATA_IMPORT_IMPORT_PLUGIN</raptorButtonId>
                         </button>
@@ -476,10 +542,6 @@
                         </button>
                         <button>
                             <name>KML</name>
-                            <raptorButtonId>DATA_IMPORT_IMPORT_PLUGIN</raptorButtonId>
-                        </button>
-                        <button>
-                            <name>Map Objects</name>
                             <raptorButtonId>DATA_IMPORT_IMPORT_PLUGIN</raptorButtonId>
                         </button>
                         <button>
@@ -495,7 +557,24 @@
                             <raptorButtonId>DATA_IMPORT_IMPORT_PLUGIN</raptorButtonId>
                         </button>
                     </buttons>
-                    <excludedButtons/>
+                    <excludedButtons>
+                        <excludedButton>
+                            <name>Antenna</name>
+                            <raptorButtonId>DATA_IMPORT_IMPORT_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>Bulk Rx</name>
+                            <raptorButtonId>DATA_IMPORT_IMPORT_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>Bulk Tx</name>
+                            <raptorButtonId>DATA_IMPORT_IMPORT_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>Map Objects</name>
+                            <raptorButtonId>DATA_IMPORT_IMPORT_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                    </excludedButtons>
                 </band>
                 <band>
                     <name>Export</name>
@@ -781,31 +860,40 @@
                     <isVisible>true</isVisible>
                     <buttons>
                         <button>
-                            <name>DPACS Motor Test Panel</name>
-                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
-                        </button>
-                        <button>
-                            <name>DPACS Pilot Controls</name>
+                            <name>Gamepad</name>
                             <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
                         </button>
                         <button>
                             <name>Follow Me</name>
-                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
-                        </button>
-                        <button>
-                            <name>Common Config Editor</name>
-                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
-                        </button>
-                        <button>
-                            <name>Digital Globe</name>
-                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
-                        </button>
-                        <button>
-                            <name>Gamepad</name>
-                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
                         </button>
                     </buttons>
-                    <excludedButtons/>
+                    <excludedButtons>
+                        <excludedButton>
+                            <name>DPACS Motor Test Panel</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>DPACS Pilot Controls</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>Follow Me</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>Common Config Editor</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>Next Vision Camera</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>Digital Globe</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                    </excludedButtons>
                 </band>
                 <band>
                     <name>Right Panels</name>
@@ -813,35 +901,24 @@
                     <isVisible>true</isVisible>
                     <buttons>
                         <button>
-                            <name>Ground Control</name>
-                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
-                        </button>
-                        <button>
-                            <name>System Status</name>
-                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
-                        </button>
-                        <button>
-                            <name>Payload Control</name>
-                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
-                        </button>
-                        <button>
-                            <name>DPACS Status Panel</name>
+                            <name>Track Analytics</name>
                             <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
                         </button>
                         <button>
                             <name>Next Vision Camera</name>
                             <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
                         </button>
-                        <button>
-                            <name>Track Analytics</name>
+                    </buttons>
+                    <excludedButtons>
+                        <excludedButton>
+                            <name>DPACS Status Panel</name>
                             <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
-                        </button>
-                        <button>
+                        </excludedButton>
+                        <excludedButton>
                             <name>Media Analysis</name>
                             <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
-                        </button>
-                    </buttons>
-                    <excludedButtons/>
+                        </excludedButton>
+                    </excludedButtons>
                 </band>
                 <band>
                     <name>Bottom</name>
@@ -849,23 +926,15 @@
                     <isVisible>true</isVisible>
                     <buttons>
                         <button>
-                            <name>DPACS Config Editor</name>
-                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
-                        </button>
-                        <button>
-                            <name>LOB Controls</name>
-                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
-                        </button>
-                        <button>
                             <name>Plots</name>
                             <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
                         </button>
                         <button>
-                            <name>DPACS Mission Table</name>
+                            <name>EKF Status</name>
                             <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
                         </button>
                         <button>
-                            <name>EKF Status</name>
+                            <name>DPACS Motor Test Panel</name>
                             <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
                         </button>
                         <button>
@@ -877,7 +946,20 @@
                             <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
                         </button>
                     </buttons>
-                    <excludedButtons/>
+                    <excludedButtons>
+                        <excludedButton>
+                            <name>DPACS Config Editor</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>LOB Controls</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>DPACS Mission Table</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                    </excludedButtons>
                 </band>
                 <band>
                     <name>Tools</name>
@@ -916,10 +998,6 @@
                             <name>RaptorX Help</name>
                             <raptorButtonId>HELP_RESOURCES_HELP</raptorButtonId>
                         </button>
-                        <button>
-                            <name>Report Issue</name>
-                            <raptorButtonId>HELP_RESOURCES_REPORT_ERROR</raptorButtonId>
-                        </button>
                     </buttons>
                     <excludedButtons/>
                 </band>
@@ -933,7 +1011,11 @@
                             <raptorButtonId>HELP_OTHER_PLUGIN</raptorButtonId>
                         </button>
                         <button>
-                            <name>Seraph Help</name>
+                            <name>Supported Formats</name>
+                            <raptorButtonId>HELP_OTHER_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>High Low Help</name>
                             <raptorButtonId>HELP_OTHER_PLUGIN</raptorButtonId>
                         </button>
                         <button>
@@ -945,148 +1027,16 @@
                             <raptorButtonId>HELP_OTHER_PLUGIN</raptorButtonId>
                         </button>
                         <button>
+                            <name>Seraph Help</name>
+                            <raptorButtonId>HELP_OTHER_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
                             <name>GRG Grid Help</name>
                             <raptorButtonId>HELP_OTHER_PLUGIN</raptorButtonId>
                         </button>
                         <button>
                             <name>Route Planning</name>
                             <raptorButtonId>HELP_OTHER_PLUGIN</raptorButtonId>
-                        </button>
-                        <button>
-                            <name>High Low Help</name>
-                            <raptorButtonId>HELP_OTHER_PLUGIN</raptorButtonId>
-                        </button>
-                        <button>
-                            <name>Supported Formats</name>
-                            <raptorButtonId>HELP_OTHER_PLUGIN</raptorButtonId>
-                        </button>
-                    </buttons>
-                    <excludedButtons/>
-                </band>
-            </bands>
-        </task>
-        <task>
-            <name>DPACS</name>
-            <isVisible>true</isVisible>
-            <isHiddenByUser>false</isHiddenByUser>
-            <pluginUniqueKey>DPACS</pluginUniqueKey>
-            <bands>
-                <band>
-                    <name>Connect</name>
-                    <isVisible>true</isVisible>
-                    <pluginUniqueKey>DPACS</pluginUniqueKey>
-                    <buttons>
-                        <button>
-                            <name>Connect Drone</name>
-                            <pluginUniqueKey>DPACS</pluginUniqueKey>
-                        </button>
-                        <button>
-                            <name>Connect GCS</name>
-                            <pluginUniqueKey>DPACS</pluginUniqueKey>
-                        </button>
-                        <button>
-                            <name>Connect RTK GPS</name>
-                            <pluginUniqueKey>DPACS</pluginUniqueKey>
-                        </button>
-                        <button>
-                            <name>Connect GCS Pi</name>
-                            <pluginUniqueKey>DPACS</pluginUniqueKey>
-                        </button>
-                        <button>
-                            <name>Connect UAV Pi</name>
-                            <pluginUniqueKey>DPACS</pluginUniqueKey>
-                        </button>
-                    </buttons>
-                    <excludedButtons/>
-                </band>
-                <band>
-                    <name>Status and Control</name>
-                    <isVisible>true</isVisible>
-                    <pluginUniqueKey>DPACS</pluginUniqueKey>
-                    <buttons>
-                        <button>
-                            <name>Pilot Controls</name>
-                            <pluginUniqueKey>DPACS</pluginUniqueKey>
-                        </button>
-                        <button>
-                            <name>Simple Pilot Controls</name>
-                            <pluginUniqueKey>DPACS</pluginUniqueKey>
-                        </button>
-                        <button>
-                            <name>Follow Me</name>
-                            <pluginUniqueKey>DPACS</pluginUniqueKey>
-                        </button>
-                        <button>
-                            <name>Status</name>
-                            <pluginUniqueKey>DPACS</pluginUniqueKey>
-                        </button>
-                        <button>
-                            <name>EKF Status</name>
-                            <pluginUniqueKey>DPACS</pluginUniqueKey>
-                        </button>
-                        <button>
-                            <name>Vibration Status</name>
-                            <pluginUniqueKey>DPACS</pluginUniqueKey>
-                        </button>
-                        <button>
-                            <name>Ground RTK GPS</name>
-                            <pluginUniqueKey>DPACS</pluginUniqueKey>
-                        </button>
-                        <button>
-                            <name>Common Config Editor</name>
-                            <pluginUniqueKey>DPACS</pluginUniqueKey>
-                        </button>
-                        <button>
-                            <name>Config Editor</name>
-                            <pluginUniqueKey>DPACS</pluginUniqueKey>
-                        </button>
-                        <button>
-                            <name>Edit Preferences</name>
-                            <pluginUniqueKey>DPACS</pluginUniqueKey>
-                        </button>
-                        <button>
-                            <name>Mission Table</name>
-                            <pluginUniqueKey>DPACS</pluginUniqueKey>
-                        </button>
-                        <button>
-                            <name>Motor Test</name>
-                            <pluginUniqueKey>DPACS</pluginUniqueKey>
-                        </button>
-                        <button>
-                            <name>Plots</name>
-                            <pluginUniqueKey>DPACS</pluginUniqueKey>
-                        </button>
-                        <button>
-                            <name>Select Drone</name>
-                            <pluginUniqueKey>DPACS</pluginUniqueKey>
-                        </button>
-                        <button>
-                            <name>Share</name>
-                            <pluginUniqueKey>DPACS</pluginUniqueKey>
-                        </button>
-                        <button>
-                            <name>Calculate LOS</name>
-                            <pluginUniqueKey>DPACS</pluginUniqueKey>
-                        </button>
-                        <button>
-                            <name>LOB Controls</name>
-                            <pluginUniqueKey>DPACS</pluginUniqueKey>
-                        </button>
-                        <button>
-                            <name>Ground Control</name>
-                            <pluginUniqueKey>DPACS</pluginUniqueKey>
-                        </button>
-                        <button>
-                            <name>System Status</name>
-                            <pluginUniqueKey>DPACS</pluginUniqueKey>
-                        </button>
-                        <button>
-                            <name>Payload Control</name>
-                            <pluginUniqueKey>DPACS</pluginUniqueKey>
-                        </button>
-                        <button>
-                            <name>Next Vision Camera</name>
-                            <pluginUniqueKey>DPACS</pluginUniqueKey>
                         </button>
                     </buttons>
                     <excludedButtons/>

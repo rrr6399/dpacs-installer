@@ -191,8 +191,8 @@ context.goForward(1, true, true);
                           </property>
                           <property name="fragmentInsertMode" type="enum" class="com.install4j.runtime.beans.actions.xml.FragmentInsertMode" value="REPLACE" />
                           <property name="fragmentText" type="string">&lt;map&gt;
-				  <!-- &lt;entry key="ActiveConfiguration" value="Menet Aero Static Tethered Copter Mission"/&gt; -->
-                        &lt;entry key="ActiveConfiguration" value="Default"/&gt;
+			&lt;entry key="ActiveConfiguration" value="Menet Aero Static Tethered Copter Mission"/&gt;
+				  <!-- &lt;entry key="ActiveConfiguration" value="Default"/&gt; -->
                         &lt;entry key="DisplayDefaultConfiguration" value="true"/&gt;
                     &lt;/map&gt;
 </property>
