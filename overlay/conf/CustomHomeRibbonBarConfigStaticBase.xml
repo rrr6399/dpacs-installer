@@ -1,0 +1,1063 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ribbonBarConfiguration>
+    <name>Static Base RibbonBar</name>
+    <isEditable>true</isEditable>
+    <isRibbonMinimized>false</isRibbonMinimized>
+    <tasks>
+        <task>
+            <name>Home</name>
+            <raptorTaskId>HOME</raptorTaskId>
+            <isVisible>true</isVisible>
+            <isHiddenByUser>true</isHiddenByUser>
+            <bands>
+                <band>
+                    <name>Left Panel</name>
+                    <raptorBandId>HOME_LEFT_PANEL</raptorBandId>
+                    <isVisible>true</isVisible>
+                    <buttons>
+                        <button>
+                            <name>Explorer</name>
+                            <raptorButtonId>HOME_LEFT_PANEL_EXPLORER</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Devices</name>
+                            <raptorButtonId>DEVICES_MANAGE_DEVICES</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Connections</name>
+                            <raptorButtonId>CONNECT_MANAGE_CONNECTIONS</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Layers</name>
+                            <raptorButtonId>MAPS_MANAGE_LAYERS</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Media</name>
+                            <raptorButtonId>MEDIA_MANAGE_MEDIA</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Files</name>
+                            <raptorButtonId>ATTACHMENTS_MANAGE_FILES</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Icons</name>
+                            <raptorButtonId>HOME_LEFT_PANEL_ICONS</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Apps</name>
+                            <raptorButtonId>APPS_MANAGE_APPS</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Search</name>
+                            <raptorButtonId>HOME_LEFT_PANEL_SEARCH</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+                <band>
+                    <name>Right Panel</name>
+                    <raptorBandId>HOME_RIGHT_PANEL</raptorBandId>
+                    <isVisible>true</isVisible>
+                    <buttons>
+                        <button>
+                            <name>Event Log</name>
+                            <raptorButtonId>HOME_RIGHT_PANEL_EVENT_LOG</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Properties</name>
+                            <raptorButtonId>HOME_RIGHT_PANEL_PROPERTIES</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+                <band>
+                    <name>Bottom</name>
+                    <raptorBandId>HOME_BOTTOM</raptorBandId>
+                    <isVisible>true</isVisible>
+                    <buttons>
+                        <button>
+                            <name>Playback</name>
+                            <raptorButtonId>HOME_BOTTOM_PLAYBACK</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>System Messages</name>
+                            <raptorButtonId>HOME_BOTTOM_SYSTEM_MESSAGES</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+            </bands>
+        </task>
+        <task>
+            <name>DPACS</name>
+            <isVisible>true</isVisible>
+            <isHiddenByUser>false</isHiddenByUser>
+            <pluginUniqueKey>DPACS</pluginUniqueKey>
+            <bands>
+                <band>
+                    <name>Connect</name>
+                    <isVisible>true</isVisible>
+                    <pluginUniqueKey>DPACS</pluginUniqueKey>
+                    <buttons>
+                        <button>
+                            <name>Connect Drone</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                        <button>
+                            <name>Connect RTK GPS</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                        <button>
+                            <name>Gamepad</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+                <band>
+                    <name>Status and Control</name>
+                    <isVisible>true</isVisible>
+                    <pluginUniqueKey>DPACS</pluginUniqueKey>
+                    <buttons>
+                        <button>
+                            <name>Simple Pilot Controls</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                        <button>
+                            <name>Ground RTK GPS</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                        <button>
+                            <name>Motor Test</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                        <button>
+                            <name>Next Vision Camera</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                        <button>
+                            <name>EKF Status</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                        <button>
+                            <name>Vibration Status</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                        <button>
+                            <name>Status</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                        <button>
+                            <name>Plots</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                        <button>
+                            <name>Calculate LOS</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                        <button>
+                            <name>Edit Preferences</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+            </bands>
+        </task>
+        <task>
+            <name>Connect</name>
+            <raptorTaskId>CONNECT</raptorTaskId>
+            <isVisible>true</isVisible>
+            <isHiddenByUser>false</isHiddenByUser>
+            <bands>
+                <band>
+                    <name>Manage</name>
+                    <raptorBandId>CONNECT_MANAGE</raptorBandId>
+                    <isVisible>true</isVisible>
+                    <buttons>
+                        <button>
+                            <name>Connections</name>
+                            <raptorButtonId>CONNECT_MANAGE_CONNECTIONS</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+                <band>
+                    <name>Connections</name>
+                    <raptorBandId>CONNECT_CONNECTIONS</raptorBandId>
+                    <isVisible>true</isVisible>
+                    <buttons>
+                        <button>
+                            <name>CoT Publish</name>
+                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>CoT Request Notify</name>
+                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>CoT Subscribe</name>
+                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>File</name>
+                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>DPACS Connection</name>
+                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons>
+                        <excludedButton>
+                            <name>Serial/USB</name>
+                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>TCP-IP Server</name>
+                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>TCP-IP Client</name>
+                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>GPS Client</name>
+                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>GPS Server</name>
+                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>GeoRSS II</name>
+                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>USB GPS</name>
+                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>DPACS</name>
+                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>RTK GPS Connection</name>
+                            <raptorButtonId>CONNECT_CONNECTIONS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                    </excludedButtons>
+                </band>
+            </bands>
+        </task>
+        <task>
+            <name>Devices</name>
+            <raptorTaskId>DEVICES</raptorTaskId>
+            <isVisible>false</isVisible>
+            <isHiddenByUser>true</isHiddenByUser>
+            <bands>
+                <band>
+                    <name>Manage</name>
+                    <raptorBandId>DEVICES_MANAGE</raptorBandId>
+                    <isVisible>false</isVisible>
+                    <buttons>
+                        <button>
+                            <name>Devices</name>
+                            <raptorButtonId>DEVICES_MANAGE_DEVICES</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+                <band>
+                    <name>Devices</name>
+                    <raptorBandId>DEVICES_DEVICES</raptorBandId>
+                    <isVisible>false</isVisible>
+                    <buttons>
+                        <button>
+                            <name>DPACS</name>
+                            <raptorButtonId>DEVICES_DEVICES_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>DPACS GCS</name>
+                            <raptorButtonId>DEVICES_DEVICES_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>GPS (NMEA)</name>
+                            <raptorButtonId>DEVICES_DEVICES_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Media Device</name>
+                            <raptorButtonId>DEVICES_DEVICES_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>RTK GPS Device</name>
+                            <raptorButtonId>DEVICES_DEVICES_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Tractor Beam</name>
+                            <raptorButtonId>DEVICES_DEVICES_PLUGIN</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons>
+                        <excludedButton>
+                            <name>Receiver</name>
+                            <raptorButtonId>DEVICES_DEVICES_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>Repeater</name>
+                            <raptorButtonId>DEVICES_DEVICES_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>TMRS2 GCS</name>
+                            <raptorButtonId>DEVICES_DEVICES_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>TMRS2 UAV</name>
+                            <raptorButtonId>DEVICES_DEVICES_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>Transmitter</name>
+                            <raptorButtonId>DEVICES_DEVICES_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                    </excludedButtons>
+                </band>
+                <band>
+                    <name>Tools</name>
+                    <raptorBandId>DEVICES_TOOLS</raptorBandId>
+                    <isVisible>false</isVisible>
+                    <buttons>
+                        <button>
+                            <name>Suppressed Devices</name>
+                            <raptorButtonId>DEVICES_TOOLS_SUPPRESSED_DEVICES</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+            </bands>
+        </task>
+        <task>
+            <name>Maps</name>
+            <raptorTaskId>MAPS</raptorTaskId>
+            <isVisible>true</isVisible>
+            <isHiddenByUser>false</isHiddenByUser>
+            <bands>
+                <band>
+                    <name>Manage</name>
+                    <raptorBandId>MAPS_MANAGE</raptorBandId>
+                    <isVisible>true</isVisible>
+                    <buttons>
+                        <button>
+                            <name>Layers</name>
+                            <raptorButtonId>MAPS_MANAGE_LAYERS</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+                <band>
+                    <name>Imagery</name>
+                    <raptorBandId>MAPS_IMAGERY</raptorBandId>
+                    <isVisible>true</isVisible>
+                    <buttons>
+                        <button>
+                            <name>Connect to Server</name>
+                            <raptorButtonId>MAPS_IMAGERY_CONNECT_TO_SERVER</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Connect to Map Set</name>
+                            <raptorButtonId>MAPS_IMAGERY_CONNECT_TO_MAP_SET</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Convert Imagery</name>
+                            <raptorButtonId>MAPS_IMAGERY_CONVERT_IMAGERY</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+                <band>
+                    <name>Elevation</name>
+                    <raptorBandId>MAPS_ELEVATION</raptorBandId>
+                    <isVisible>true</isVisible>
+                    <buttons>
+                        <button>
+                            <name>Connect to Server</name>
+                            <raptorButtonId>MAPS_ELEVATION_CONNECT_TO_SERVER</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Connect to Map Set</name>
+                            <raptorButtonId>MAPS_ELEVATION_CONNECT_TO_MAP_SET</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Convert Elevation</name>
+                            <raptorButtonId>MAPS_ELEVATION_CONVERT_ELEVATION</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+                <band>
+                    <name>Overlay</name>
+                    <raptorBandId>MAPS_OVERLAY</raptorBandId>
+                    <isVisible>true</isVisible>
+                    <buttons>
+                        <button>
+                            <name>Image</name>
+                            <raptorButtonId>MAPS_OVERLAY_IMAGE</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Placemarks</name>
+                            <raptorButtonId>MAPS_OVERLAY_PLACEMARKS</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>KML/KMZ Import</name>
+                            <raptorButtonId>MAPS_OVERLAY_KML_KMZ_IMPORT</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>KML/KMZ Export</name>
+                            <raptorButtonId>MAPS_OVERLAY_KML_KMZ_EXPORT</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>SHP</name>
+                            <raptorButtonId>MAPS_OVERLAY_SHP</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+                <band>
+                    <name>Tools</name>
+                    <raptorBandId>MAPS_TOOLS</raptorBandId>
+                    <isVisible>true</isVisible>
+                    <buttons>
+                        <button>
+                            <name>Map Set Builder</name>
+                            <raptorButtonId>MAPS_TOOLS_MAP_SET_BUILDER</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Cache Cleaner</name>
+                            <raptorButtonId>MAPS_TOOLS_CACHE_CLEANER</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Terrain Discovery</name>
+                            <raptorButtonId>MAPS_TOOLS_TERRAIN_DISCOVERY</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Server Passwords</name>
+                            <raptorButtonId>MAPS_TOOLS_SERVER_PASSWORDS</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+            </bands>
+        </task>
+        <task>
+            <name>Attachments</name>
+            <raptorTaskId>ATTACHMENTS</raptorTaskId>
+            <isVisible>false</isVisible>
+            <isHiddenByUser>true</isHiddenByUser>
+            <bands>
+                <band>
+                    <name>Manage</name>
+                    <raptorBandId>ATTACHMENTS_MANAGE</raptorBandId>
+                    <isVisible>false</isVisible>
+                    <buttons>
+                        <button>
+                            <name>Files</name>
+                            <raptorButtonId>ATTACHMENTS_MANAGE_FILES</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+                <band>
+                    <name>Media</name>
+                    <raptorBandId>ATTACHMENTS_MEDIA</raptorBandId>
+                    <isVisible>false</isVisible>
+                    <buttons>
+                        <button>
+                            <name>Audio</name>
+                            <raptorButtonId>ATTACHMENTS_MEDIA_AUDIO</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Photo</name>
+                            <raptorButtonId>ATTACHMENTS_MEDIA_PHOTO</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Video</name>
+                            <raptorButtonId>ATTACHMENTS_MEDIA_VIDEO</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+                <band>
+                    <name>Other</name>
+                    <raptorBandId>ATTACHMENTS_OTHER</raptorBandId>
+                    <isVisible>false</isVisible>
+                    <buttons>
+                        <button>
+                            <name>File</name>
+                            <raptorButtonId>ATTACHMENTS_OTHER_FILE</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Note</name>
+                            <raptorButtonId>ATTACHMENTS_OTHER_NOTE</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>URL</name>
+                            <raptorButtonId>ATTACHMENTS_OTHER_URL</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+                <band>
+                    <name>Forms</name>
+                    <raptorBandId>ATTACHMENTS_FORMS</raptorBandId>
+                    <isVisible>false</isVisible>
+                    <buttons/>
+                    <excludedButtons/>
+                </band>
+            </bands>
+        </task>
+        <task>
+            <name>Data</name>
+            <raptorTaskId>DATA</raptorTaskId>
+            <isVisible>true</isVisible>
+            <isHiddenByUser>false</isHiddenByUser>
+            <bands>
+                <band>
+                    <name>Import</name>
+                    <raptorBandId>DATA_IMPORT</raptorBandId>
+                    <isVisible>true</isVisible>
+                    <buttons>
+                        <button>
+                            <name>CSV</name>
+                            <raptorButtonId>DATA_IMPORT_IMPORT_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>GPX</name>
+                            <raptorButtonId>DATA_IMPORT_IMPORT_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>KML</name>
+                            <raptorButtonId>DATA_IMPORT_IMPORT_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Media</name>
+                            <raptorButtonId>DATA_IMPORT_IMPORT_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>NMEA</name>
+                            <raptorButtonId>DATA_IMPORT_IMPORT_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>RML</name>
+                            <raptorButtonId>DATA_IMPORT_IMPORT_PLUGIN</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons>
+                        <excludedButton>
+                            <name>Antenna</name>
+                            <raptorButtonId>DATA_IMPORT_IMPORT_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>Bulk Rx</name>
+                            <raptorButtonId>DATA_IMPORT_IMPORT_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>Bulk Tx</name>
+                            <raptorButtonId>DATA_IMPORT_IMPORT_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>Map Objects</name>
+                            <raptorButtonId>DATA_IMPORT_IMPORT_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                    </excludedButtons>
+                </band>
+                <band>
+                    <name>Export</name>
+                    <raptorBandId>DATA_EXPORT</raptorBandId>
+                    <isVisible>true</isVisible>
+                    <buttons>
+                        <button>
+                            <name>CSV</name>
+                            <raptorButtonId>DATA_EXPORT_EXPORT_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>GPX</name>
+                            <raptorButtonId>DATA_EXPORT_EXPORT_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>KML</name>
+                            <raptorButtonId>DATA_EXPORT_EXPORT_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>NMEA</name>
+                            <raptorButtonId>DATA_EXPORT_EXPORT_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>RML</name>
+                            <raptorButtonId>DATA_EXPORT_EXPORT_PLUGIN</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+            </bands>
+        </task>
+        <task>
+            <name>Draw</name>
+            <raptorTaskId>DRAW</raptorTaskId>
+            <isVisible>true</isVisible>
+            <isHiddenByUser>false</isHiddenByUser>
+            <bands>
+                <band>
+                    <name>Selector</name>
+                    <raptorBandId>DRAW_SELECTOR</raptorBandId>
+                    <isVisible>true</isVisible>
+                    <buttons>
+                        <button>
+                            <name>Selector</name>
+                            <raptorButtonId>DRAW_SELECTOR_SELECTOR</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+                <band>
+                    <name>2D Shapes</name>
+                    <raptorBandId>DRAW_2D_SHAPES</raptorBandId>
+                    <isVisible>true</isVisible>
+                    <buttons>
+                        <button>
+                            <name>Path</name>
+                            <raptorButtonId>DRAW_2D_SHAPES_PATH</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Square</name>
+                            <raptorButtonId>DRAW_2D_SHAPES_SQUARE</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Rectangle</name>
+                            <raptorButtonId>DRAW_2D_SHAPES_RECTANGLE</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Polygon</name>
+                            <raptorButtonId>DRAW_2D_SHAPES_POLYGON</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Circle</name>
+                            <raptorButtonId>DRAW_2D_SHAPES_CIRCLE</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Ellipse</name>
+                            <raptorButtonId>DRAW_2D_SHAPES_ELLIPSE</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+                <band>
+                    <name>3D Shapes</name>
+                    <raptorBandId>DRAW_3D_SHAPES</raptorBandId>
+                    <isVisible>true</isVisible>
+                    <buttons>
+                        <button>
+                            <name>Ellipsoid</name>
+                            <raptorButtonId>DRAW_3D_SHAPES_ELLIPSOID</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Box</name>
+                            <raptorButtonId>DRAW_3D_SHAPES_BOX</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Polygon</name>
+                            <raptorButtonId>DRAW_3D_SHAPES_POLYGON</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Path</name>
+                            <raptorButtonId>DRAW_3D_SHAPES_POLYLINE</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Cone</name>
+                            <raptorButtonId>DRAW_3D_SHAPES_CONE</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Pyramid</name>
+                            <raptorButtonId>DRAW_3D_SHAPES_PYRAMID</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Cylinder</name>
+                            <raptorButtonId>DRAW_3D_SHAPES_CYLINDER</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Wedge</name>
+                            <raptorButtonId>DRAW_3D_SHAPES_WEDGE</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+                <band>
+                    <name>Text</name>
+                    <raptorBandId>DRAW_TEXT</raptorBandId>
+                    <isVisible>true</isVisible>
+                    <buttons>
+                        <button>
+                            <name>Text Box</name>
+                            <raptorButtonId>DRAW_TEXT_TEXT_BOX</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Text Label</name>
+                            <raptorButtonId>DRAW_TEXT_TEXT_LABEL</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+                <band>
+                    <name>Tools</name>
+                    <raptorBandId>DRAW_TOOLS</raptorBandId>
+                    <isVisible>true</isVisible>
+                    <buttons>
+                        <button>
+                            <name>Range Rings</name>
+                            <raptorButtonId>DRAW_TOOLS_RANGE_RINGS</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Geo Ping</name>
+                            <raptorButtonId>DRAW_TOOLS_GEO_PING</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>High / Low</name>
+                            <raptorButtonId>DRAW_TOOLS_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Line of Sight</name>
+                            <raptorButtonId>DRAW_TOOLS_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Quick Route</name>
+                            <raptorButtonId>DRAW_TOOLS_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Quick Measure</name>
+                            <raptorButtonId>DRAW_TOOLS_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>GRG Grid</name>
+                            <raptorButtonId>DRAW_TOOLS_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Free Draw</name>
+                            <raptorButtonId>DRAW_TOOLS_PLUGIN</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+            </bands>
+        </task>
+        <task>
+            <name>View</name>
+            <raptorTaskId>VIEW</raptorTaskId>
+            <isVisible>true</isVisible>
+            <isHiddenByUser>false</isHiddenByUser>
+            <bands>
+                <band>
+                    <name>View</name>
+                    <raptorBandId>VIEW_VIEW</raptorBandId>
+                    <isVisible>true</isVisible>
+                    <buttons>
+                        <button>
+                            <name>Go to Location</name>
+                            <raptorButtonId>VIEW_VIEW_GO_TO_LOCATION</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Go to Area</name>
+                            <raptorButtonId>VIEW_VIEW_GO_TO_AREA</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Globe View</name>
+                            <raptorButtonId>VIEW_VIEW_GLOBE_VIEW</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>New Globe</name>
+                            <raptorButtonId>VIEW_VIEW_NEW_GLOBE</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Default Heading</name>
+                            <raptorButtonId>VIEW_VIEW_DEFAULT_HEADING</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Default Tilt</name>
+                            <raptorButtonId>VIEW_VIEW_DEFAULT_TILT</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Default Heading and Tilt</name>
+                            <raptorButtonId>VIEW_VIEW_DEFAULT_HEADING_AND_TILT</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Navigation Lock</name>
+                            <raptorButtonId>VIEW_VIEW_NAVIGATION_LOCK</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Keep in View</name>
+                            <raptorButtonId>VIEW_VIEW_KEEP_IN_VIEW</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+                <band>
+                    <name>Manage Favorites</name>
+                    <raptorBandId>VIEW_MANAGE_FAVORITES</raptorBandId>
+                    <isVisible>true</isVisible>
+                    <buttons>
+                        <button>
+                            <name>Add Favorite</name>
+                            <raptorButtonId>VIEW_MANAGE_FAVORITES_ADD_FAVORITE</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Manage Favorites</name>
+                            <raptorButtonId>VIEW_MANAGE_FAVORITES_MANAGE_FAVORITES</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+                <band>
+                    <name>Project Favorites</name>
+                    <raptorBandId>VIEW_PROJECT_FAVORITES</raptorBandId>
+                    <isVisible>true</isVisible>
+                    <buttons/>
+                    <excludedButtons/>
+                </band>
+                <band>
+                    <name>User Favorites</name>
+                    <raptorBandId>VIEW_USER_FAVORITES</raptorBandId>
+                    <isVisible>true</isVisible>
+                    <buttons/>
+                    <excludedButtons/>
+                </band>
+            </bands>
+        </task>
+        <task>
+            <name>Apps</name>
+            <raptorTaskId>APPS</raptorTaskId>
+            <isVisible>true</isVisible>
+            <isHiddenByUser>false</isHiddenByUser>
+            <bands>
+                <band>
+                    <name>Manage</name>
+                    <raptorBandId>APPS_MANAGE</raptorBandId>
+                    <isVisible>true</isVisible>
+                    <buttons>
+                        <button>
+                            <name>Apps</name>
+                            <raptorButtonId>APPS_MANAGE_APPS</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+                <band>
+                    <name>Left Panels</name>
+                    <raptorBandId>APPS_LEFT_PANELS</raptorBandId>
+                    <isVisible>true</isVisible>
+                    <buttons>
+                        <button>
+                            <name>Gamepad</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons>
+                        <excludedButton>
+                            <name>DPACS Motor Test Panel</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>DPACS Pilot Controls</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>Follow Me</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>Common Config Editor</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>Next Vision Camera</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>Digital Globe</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                    </excludedButtons>
+                </band>
+                <band>
+                    <name>Right Panels</name>
+                    <raptorBandId>APPS_RIGHT_PANELS</raptorBandId>
+                    <isVisible>true</isVisible>
+                    <buttons>
+                        <button>
+                            <name>Track Analytics</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Next Vision Camera</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons>
+                        <excludedButton>
+                            <name>DPACS Status Panel</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>Media Analysis</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                    </excludedButtons>
+                </band>
+                <band>
+                    <name>Bottom</name>
+                    <raptorBandId>APPS_BOTTOM_PANELS</raptorBandId>
+                    <isVisible>true</isVisible>
+                    <buttons>
+                        <button>
+                            <name>Plots</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>EKF Status</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>DPACS Motor Test Panel</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Vibration Status</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>RTK GPS status and configuration</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons>
+                        <excludedButton>
+                            <name>DPACS Config Editor</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>LOB Controls</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                        <excludedButton>
+                            <name>DPACS Mission Table</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </excludedButton>
+                    </excludedButtons>
+                </band>
+                <band>
+                    <name>Tools</name>
+                    <raptorBandId>APPS_TOOLS</raptorBandId>
+                    <isVisible>true</isVisible>
+                    <buttons>
+                        <button>
+                            <name>Plug-in Manager</name>
+                            <raptorButtonId>APPS_TOOLS_PLUGIN_MANAGER</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+            </bands>
+        </task>
+        <task>
+            <name>Help</name>
+            <raptorTaskId>HELP</raptorTaskId>
+            <isVisible>true</isVisible>
+            <isHiddenByUser>false</isHiddenByUser>
+            <bands>
+                <band>
+                    <name>Resources</name>
+                    <raptorBandId>HELP_RESOURCES</raptorBandId>
+                    <isVisible>true</isVisible>
+                    <buttons>
+                        <button>
+                            <name>About</name>
+                            <raptorButtonId>HELP_RESOURCES_ABOUT</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>OpenGL Info</name>
+                            <raptorButtonId>HELP_RESOURCES_OPENGL_INFO</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>RaptorX Help</name>
+                            <raptorButtonId>HELP_RESOURCES_HELP</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+                <band>
+                    <name>Other Help</name>
+                    <raptorBandId>HELP_OTHER_HELP</raptorBandId>
+                    <isVisible>true</isVisible>
+                    <buttons>
+                        <button>
+                            <name>DPACS Help</name>
+                            <raptorButtonId>HELP_OTHER_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Supported Formats</name>
+                            <raptorButtonId>HELP_OTHER_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>High Low Help</name>
+                            <raptorButtonId>HELP_OTHER_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Sandbar Help</name>
+                            <raptorButtonId>HELP_OTHER_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Sandbar T.A.</name>
+                            <raptorButtonId>HELP_OTHER_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Seraph Help</name>
+                            <raptorButtonId>HELP_OTHER_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>GRG Grid Help</name>
+                            <raptorButtonId>HELP_OTHER_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>Route Planning</name>
+                            <raptorButtonId>HELP_OTHER_PLUGIN</raptorButtonId>
+                        </button>
+                    </buttons>
+                    <excludedButtons/>
+                </band>
+            </bands>
+        </task>
+    </tasks>
+    <taskGroups/>
+    <useQuickAccessBar>true</useQuickAccessBar>
+    <quickAccessButtons>
+        <quickAccessButton>
+            <name>New</name>
+            <raptorButtonId>APPLICATION_MENU_NEW</raptorButtonId>
+        </quickAccessButton>
+        <quickAccessButton>
+            <name>Open</name>
+            <raptorButtonId>APPLICATION_MENU_OPEN</raptorButtonId>
+        </quickAccessButton>
+        <quickAccessButton>
+            <name>Save</name>
+            <raptorButtonId>APPLICATION_MENU_SAVE</raptorButtonId>
+        </quickAccessButton>
+        <quickAccessButton>
+            <name>Package</name>
+            <raptorButtonId>APPLICATION_MENU_PACKAGE</raptorButtonId>
+        </quickAccessButton>
+        <quickAccessButton>
+            <name>Project Settings</name>
+            <raptorButtonId>APPLICATION_MENU_PROJECT_SETTINGS</raptorButtonId>
+        </quickAccessButton>
+        <quickAccessButton>
+            <name>User Preferences</name>
+            <raptorButtonId>APPLICATION_MENU_USER_PREFERENCES</raptorButtonId>
+        </quickAccessButton>
+    </quickAccessButtons>
+</ribbonBarConfiguration>
