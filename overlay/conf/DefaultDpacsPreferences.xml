@@ -61,22 +61,22 @@
     <Final_Altitude_Meters>5.0</Final_Altitude_Meters>
     <Hover_Amps>20.0</Hover_Amps>
     <AMPS_PER_MPS_GRADIENT>1.0</AMPS_PER_MPS_GRADIENT>
-    <Land_On_Guided_RTL>true</Land_On_Guided_RTL>
+    <Land_On_Guided_RTL>false</Land_On_Guided_RTL>
     <Final_Landing_Height_For_Guided_RTL>0.1</Final_Landing_Height_For_Guided_RTL>
     <MONITOR_BATTERY_CAPACITY>false</MONITOR_BATTERY_CAPACITY>
     <PRECISION_LANDING_USING_RTK_OFFSETS>true</PRECISION_LANDING_USING_RTK_OFFSETS>
-    <AUTO_KILL_ON_PRECISION_LANDING>false</AUTO_KILL_ON_PRECISION_LANDING>
-    <AUTO_KILL_ON_LANDING_TOLERANCE_CM>9.0</AUTO_KILL_ON_LANDING_TOLERANCE_CM>
-    <Guided_RTL_When_Possible>false</Guided_RTL_When_Possible>
+    <AUTO_KILL_ON_PRECISION_LANDING>true</AUTO_KILL_ON_PRECISION_LANDING>
+    <AUTO_KILL_ON_LANDING_TOLERANCE_CM>5.0</AUTO_KILL_ON_LANDING_TOLERANCE_CM>
+    <Guided_RTL_When_Possible>true</Guided_RTL_When_Possible>
     <Nudge_Distance_Meters>1.0</Nudge_Distance_Meters>
     <Nudge_Vertical_Distance_Meters>1.0</Nudge_Vertical_Distance_Meters>
     <MavLink_V2>false</MavLink_V2>
-    <Confirm_Abort>true</Confirm_Abort>
-    <Confirm_Keyboard_Abort>true</Confirm_Keyboard_Abort>
+    <Confirm_Abort>false</Confirm_Abort>
+    <Confirm_Keyboard_Abort>false</Confirm_Keyboard_Abort>
     <Desktop_Notifications>false</Desktop_Notifications>
     <NO_RC_RECEIVER>true</NO_RC_RECEIVER>
     <USE_THROTTLE_VERIFIER>true</USE_THROTTLE_VERIFIER>
-    <Automatically_Activate_Follow_Me_Mode>false</Automatically_Activate_Follow_Me_Mode>
+    <Automatically_Activate_Follow_Me_Mode>true</Automatically_Activate_Follow_Me_Mode>
     <Show_Forward_Cone>true</Show_Forward_Cone>
     <Show_Backward_Cone>false</Show_Backward_Cone>
     <Show_GCS_Forward_Cone>true</Show_GCS_Forward_Cone>
@@ -123,12 +123,12 @@
             <value>2</value>
         </entry>
     </MessageGroupRateMap>
-    <Basic_Mode>true</Basic_Mode>
+    <Basic_Mode>false</Basic_Mode>
     <GPS2_Is_TB_Position>false</GPS2_Is_TB_Position>
     <Use_NextVision_Connection>false</Use_NextVision_Connection>
     <NextVision_Video_Connection_Refresh_Seconds>10.0</NextVision_Video_Connection_Refresh_Seconds>
     <Video_URL>rtsp://192.168.0.201:8554/live0</Video_URL>
-    <Enforce_Emergency_Landing_Location>false</Enforce_Emergency_Landing_Location>
+    <Enforce_Emergency_Landing_Location>true</Enforce_Emergency_Landing_Location>
     <Emergency_Landing_Location_Range_Meters>10.0</Emergency_Landing_Location_Range_Meters>
     <Emergency_Landing_Location_Relative_Angle_Deg>90.0</Emergency_Landing_Location_Relative_Angle_Deg>
     <Use_GPS_For_Velocity_Direction>true</Use_GPS_For_Velocity_Direction>
