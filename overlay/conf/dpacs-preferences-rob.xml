@@ -127,7 +127,7 @@
 <GPS2_Is_TB_Position>false</GPS2_Is_TB_Position>
 <Use_NextVision_Connection>true</Use_NextVision_Connection>
 <NextVision_Video_Connection_Refresh_Seconds>10.0</NextVision_Video_Connection_Refresh_Seconds>
-<Video_URL>udp://0.0.0.0:11024</Video_URL>
+<Video_URL>UDP://0.0.0.0:11024:SERVER</Video_URL>
 <Enforce_Emergency_Landing_Location>false</Enforce_Emergency_Landing_Location>
 <Emergency_Landing_Location_Range_Meters>10.0</Emergency_Landing_Location_Range_Meters>
 <Emergency_Landing_Location_Relative_Angle_Deg>90.0</Emergency_Landing_Location_Relative_Angle_Deg>

@@ -1,0 +1,1 @@
+copy Default_STS_DPACS_Preferences.xml DefaultDpacsPreferences.xml

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?> 
+<Layer layerType="TiledImageLayer" version="1">
+	<DisplayName>1_meter_imagery : 1_meter_imagery</DisplayName> 
+	<DatasetName>0</DatasetName> 
+	<DataCacheName>raster.nationalmap.gov\_arcgis_services_Orthoimagery_USGS_EROS_Ortho_NAIP_ImageServer_WMSServer\0\default</DataCacheName> 
+	<Service serviceName="OGC:WMS" version="1.3.0">
+		<LayerNames>0</LayerNames> 
+		<StyleNames>default</StyleNames> 
+		<GetMapURL>https://services.nationalmap.gov/arcgis/services/USGSNAIPImagery/ImageServer/WMSServer?</GetMapURL> 
+		<GetCapabilitiesURL>https://services.nationalmap.gov/arcgis/services/USGSNAIPImagery/ImageServer/WMSServer?</GetCapabilitiesURL>
+	</Service>
+	<FormatSuffix>.png</FormatSuffix> 
+	<NumLevels count="14" numEmpty="0" /> 
+	<Sector>
+		<SouthWest>
+			<LatLon latitude="24.493218" longitude="-124.825493" units="degrees" /> 
+		</SouthWest>
+		<NorthEast>
+			<LatLon latitude="49.444786" longitude="-66.930849" units="degrees" /> 
+		</NorthEast>
+	</Sector>
+	<TileOrigin>
+		<LatLon latitude="-90.0" longitude="-180.0" units="degrees" /> 
+	</TileOrigin>
+	<TileSize>
+		<Dimension height="512" width="512" /> 
+	</TileSize>
+	<LevelZeroTileDelta>
+		<LatLon latitude="36.0" longitude="36.0" units="degrees" /> 
+	</LevelZeroTileDelta>
+	<ImageFormat>image/png</ImageFormat> 
+	<UseTransparentTextures>true</UseTransparentTextures> 
+</Layer>

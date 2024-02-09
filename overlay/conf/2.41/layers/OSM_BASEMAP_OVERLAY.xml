@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Layer layerType="TiledImageLayer" version="1">
+    <DisplayName>OSM Street Overlay</DisplayName>
+    <DatasetName>OSM_BASEMAP_OVERLAY</DatasetName>
+    <DataCacheName>geoint.nrlssc.navy.mil/_osm_wms_OSM_basemap_Mapnik_OSM_BASEMAP_OVERLAY/OSM_BASEMAP_OVERLAY
+    </DataCacheName>
+    <Service serviceName="OGC:WMS" version="1.3.0">
+        <URL>https://geoint.nrlssc.navy.mil/osm/wms/OSM/basemap/Mapnik/OSM_BASEMAP_OVERLAY?</URL>
+        <LayerNames>OSM_BASEMAP_OVERLAY</LayerNames>
+    </Service>
+    <FormatSuffix>.dds</FormatSuffix>
+    <NumLevels count="14" numEmpty="0"/>
+    <Sector>
+        <SouthWest>
+            <LatLon latitude="-90.0" longitude="-180.0" units="degrees"/>
+        </SouthWest>
+        <NorthEast>
+            <LatLon latitude="90.0" longitude="180.0" units="degrees"/>
+        </NorthEast>
+    </Sector>
+    <TileOrigin>
+        <LatLon latitude="-90.0" longitude="-180.0" units="degrees"/>
+    </TileOrigin>
+    <TileSize>
+        <Dimension height="512" width="512"/>
+    </TileSize>
+    <LevelZeroTileDelta>
+        <LatLon latitude="36.0" longitude="36.0" units="degrees"/>
+    </LevelZeroTileDelta>
+    <ImageFormat>image/png</ImageFormat>
+</Layer>

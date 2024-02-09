@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<layerGroups>
+    <layerGroup name="SHAPE_FILES">
+        <layer class="gov.nasa.worldwind.layers.RenderableLayer" displayName="World Political Borders"
+            iconPath="resources/globe.png" maxActiveAltitude="200000.0" minActiveAltitude="15.0"
+            name="World_Political_Borders" permanent="false" pickable="false"
+            restoreXMLString="resources/ShapeFiles/World_Political_Borders.shp" visible="true"/>
+        <layer class="gov.nasa.worldwind.layers.RenderableLayer" displayName="State Borders" iconPath="resources/globe.png"
+            maxActiveAltitude="200000.0" minActiveAltitude="15.0" name="10m-admin-1-states-provinces-lines-shp"
+            permanent="false" pickable="false"
+            restoreXMLString="resources/ShapeFiles/state_borders/10m-admin-1-states-provinces-lines-shp.shp" visible="true"/>
+    </layerGroup>
+    <layerGroup name="EXTRAS">
+        <layer class="gov.nasa.worldwind.layers.StarsLayer" displayName="Stars" iconPath="resources/globe.png"
+            maxActiveAltitude="200000.0" minActiveAltitude="100.0" name="Stars" permanent="true" pickable="false" visible="true"/>
+        <layer class="gov.nasa.worldwind.layers.SkyGradientLayer" displayName="Sky" iconPath="resources/globe.png" name="Sky"
+            permanent="true" pickable="false" visible="true"/>
+    </layerGroup>
+    <layerGroup name="IMAGERY">
+        <layer configFile="ProjectData/layers/BlackMarble.xml" displayName="Black Marble" iconPath="resources/globe.png"
+            name="BlackMarble" permanent="true" pickable="false" visible="false"/>
+        <layer class="gov.nasa.worldwind.layers.Earth.BMNGOneImage" displayName="BMNG Basic" iconPath="resources/globe.png"
+            name="BMNG Basic" permanent="true" pickable="false" visible="true"/>
+        <layer configFile="config/Earth/BMNGWMSLayer.xml" displayName="BMNG Advanced" iconPath="resources/globe.png"
+            name="BMNG Advanced" permanent="true" pickable="false" visible="true"/>
+        <layer configFile="config/Earth/LandsatI3WMSLayer.xml" displayName="Landsat I3" iconPath="resources/globe.png"
+            name="Landsat I3" permanent="false" pickable="false" visible="true"/>
+        <layer configFile="ProjectData/layers/OSM_BASEMAP.xml" displayName="OSM Basemap" iconPath="resources/globe.png"
+            maxActiveAltitude="2.0E8" minActiveAltitude="-1000.0" name="OSM_BASEMAP" permanent="true" pickable="false" visible="false"/>
+        <layer configFile="ProjectData/layers/OSM_BASEMAP_OVERLAY.xml" displayName="OSM Street Overlay"
+            iconPath="resources/globe.png" name="OSM_BASEMAP_OVERLAY" permanent="true" pickable="false" visible="false"/>
+        <layer configFile="ProjectData/layers/BingImagery.xml" displayName="BING Imagery" iconPath="resources/globe.png"
+            name="BING" permanent="true" pickable="false" visible="false"/>
+        <layer configFile="ProjectData/layers/MSVirtualEarthHybridLayer.xml" displayName="BING Hybrid Imagery"
+            iconPath="resources/globe.png" name="BING Hybrid" permanent="true" pickable="false" visible="true"/>
+    </layerGroup>
+    <layerGroup name="FEATURES">
+        <layer configFile="ProjectData/layers/OpenStreetMap.xml" displayName="Open Street Maps"
+            iconPath="resources/globe.png" name="Open Street Maps" permanent="true" pickable="false" visible="false"/>
+        <layer class="gov.nasa.worldwind.layers.Earth.MGRSGraticuleLayer" displayName="MGRS Grid"
+            iconPath="resources/text.png" name="MGRS Grid" permanent="true" pickable="false" visible="false"/>
+        <layer class="gov.nasa.worldwind.layers.LatLonGraticuleLayer" displayName="Lat/Lon Grid"
+            iconPath="resources/text.png" name="Lat Lon Grid" permanent="true" pickable="false" visible="false"/>
+        <layer class="gov.nasa.worldwind.layers.Earth.NASAWFSPlaceNameLayer" displayName="Place Names"
+            iconPath="resources/text.png" name="Place Names" permanent="true" pickable="false" visible="true"/>
+    </layerGroup>
+    <layerGroup name="MAP_DATA">
+        <layer class="gov.nasa.worldwind.layers.RenderableLayer" displayName="Shapes" name="Shapes" permanent="true"
+            pickable="true" visible="true"/>
+        <layer class="gov.raptor.core.globe.layers.TracksLayer" displayName="Tracks" iconPath="resources/globe.png"
+            name="Tracks" permanent="true" pickable="true" visible="true"/>
+        <layer class="gov.nasa.worldwind.layers.RenderableLayer" displayName="Icons" iconPath="resources/jeep.png"
+            name="Icons" permanent="true" pickable="true" visible="true"/>
+        <layer class="gov.nasa.worldwind.layers.RenderableLayer" displayName="Playback Icons" iconPath="resources/jeep.png"
+            name="Playback Icons" permanent="true" pickable="true" visible="true"/>
+        <layer class="gov.nasa.worldwind.layers.RenderableLayer" displayName="Layer Bounds"
+            iconPath="resources/annotation.png" name="Layer Bounds" permanent="true" pickable="false" visible="true"/>
+        <layer class="gov.nasa.worldwind.layers.AnnotationLayer" displayName="Annotations"
+            iconPath="resources/annotation.png" name="Annotations" permanent="true" pickable="true" visible="true"/>
+        <layer class="gov.nasa.worldwind.layers.RenderableLayer" displayName="Flat Annotations"
+            iconPath="resources/annotation.png" name="Flat Annotations" permanent="true" pickable="true" visible="true"/>
+    </layerGroup>
+    <layerGroup name="TOOLS">
+        <layer class="gov.nasa.worldwind.layers.WorldMapLayer" displayName="World Overview Map"
+            iconPath="resources/world_map_transparent.png" name="World Overview Map" permanent="true" pickable="true" visible="false"/>
+        <layer class="gov.nasa.worldwind.layers.ScalebarLayer" displayName="Scale Bar"
+            iconPath="resources/scalebar_small.png" name="Scale Bar" permanent="true" pickable="false" visible="true"/>
+        <layer class="gov.nasa.worldwind.layers.CompassLayer" displayName="Compass" iconPath="resources/compass-spiky.png"
+            name="Compass" permanent="true" pickable="true" visible="true"/>
+        <layer class="gov.nasa.worldwind.layers.ViewControlsLayer" displayName="Navigation"
+            iconPath="resources/compass-spiky.png" name="Navigation" permanent="true" pickable="true" visible="true"/>
+        <layer class="gov.nasa.worldwind.layers.RenderableLayer" displayName="Alarms" iconPath="resources/default.png"
+            name="Alarms" permanent="true" pickable="true" visible="true"/>
+        <layer class="gov.nasa.worldwind.layers.TerrainProfileLayer" displayName="Terrain Profiler"
+            iconPath="resources/chart.png" name="Terrain Profiler" permanent="true" pickable="true" visible="false"/>
+        <layer class="gov.nasa.worldwind.layers.RenderableLayer" displayName="Track Color Scale"
+            iconPath="resources/scalebar_small.png" name="Track Color Scale" permanent="true" pickable="false" visible="true"/>
+        <layer class="gov.nasa.worldwind.layers.RenderableLayer" displayName="Project Label"
+            iconPath="resources/annotation.png" name="Project Label" permanent="true" pickable="false" visible="false"/>
+    </layerGroup>
+    <layerGroup name="ELEVATION">
+	    <layer configFile="ProjectData/layers/EarthElevations2.xml" displayName="NASA USA 10m, World 30m, Ocean 900m"
+            iconPath="resources/globe.png" name="NASA 150 Earth Elevation" permanent="true" pickable="false" visible="true"/>
+	   <layer configFile="ProjectData/layers/EarthElevationModelNRL.xml" displayName="NRL USA 10m, World 30m, Ocean 900m"
+            iconPath="resources/globe.png" name="NRL Earth Elevation" permanent="true" pickable="false" visible="false"/>
+    </layerGroup>
+</layerGroups>
