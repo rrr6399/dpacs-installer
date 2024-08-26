@@ -46,9 +46,8 @@
                 <node name="RibbonBarConfiguration">
                     <map>
                         <entry key="DisplayDefaultConfiguration" value="false"/>
-                        <entry key="ActiveConfiguration" value="Menet Aero Static Tethered Copter Mission"/>
+                        <entry key="ActiveConfiguration" value="Moving Base RibbonBar"/>
                     </map>
-
                 </node>
                 <node name="CommPorts">
                     <map/>

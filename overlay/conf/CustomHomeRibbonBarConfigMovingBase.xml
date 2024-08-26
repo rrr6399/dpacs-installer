@@ -928,6 +928,10 @@
                             <name>Common Config Editor</name>
                             <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
                         </button>
+                        <button>
+                            <name>STS Rover Controls</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </button>
                     </buttons>
                     <excludedButtons/>
                 </band>

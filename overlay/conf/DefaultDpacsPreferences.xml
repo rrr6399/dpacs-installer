@@ -5,7 +5,7 @@
     <GCS_Model_Name>UTV_Polaris</GCS_Model_Name>
     <Info_Alert_Preference>true, false, false, false</Info_Alert_Preference>
     <Warning_Alert_Preference>true, false, false, true</Warning_Alert_Preference>
-    <Priority_Alert_Preference>true, true, false, true</Priority_Alert_Preference>
+    <Priority_Alert_Preference>true, true, false, false</Priority_Alert_Preference>
     <Error_Alert_Preference>true, true, true, true</Error_Alert_Preference>
     <Critical_Alert_Preference>true, true, true, true</Critical_Alert_Preference>
     <Enable_TMRS>false</Enable_TMRS>
@@ -19,7 +19,7 @@
     <GCS_Model_Vertical_Offset_Meters>0.0</GCS_Model_Vertical_Offset_Meters>
     <Initial_Zoom_Altitude_Meters>500.0</Initial_Zoom_Altitude_Meters>
     <Hover_Height_Meters>3.0</Hover_Height_Meters>
-    <Tether_Length-Meters>93.0</Tether_Length-Meters>
+    <Tether_Length-Meters>92.0</Tether_Length-Meters>
     <Tether_Length_Reduction_For_Degraded_GPS_Meters>20.0</Tether_Length_Reduction_For_Degraded_GPS_Meters>
     <Tethered_Drone>true</Tethered_Drone>
     <Maximum_Current_Threshold_Amps>70.0</Maximum_Current_Threshold_Amps>
@@ -46,15 +46,14 @@
     <Use_NO_Altitude_Offset_Correction>true</Use_NO_Altitude_Offset_Correction>
     <Minimum_RTK_GPS_Quality>RTK Fix Fixed</Minimum_RTK_GPS_Quality>
     <RTK_Port>9000</RTK_Port>
-    <RTK_Base_Station_Address>192.168.0.189</RTK_Base_Station_Address>
-    <Drone_Telemetry_Connection>UDP:192.168.0.189:15550:CLIENT</Drone_Telemetry_Connection>
-    <NextVision_Connection>UDP:192.168.0.203:10024:CLIENT</NextVision_Connection>
-    <Drone_Pi_Connection>UDP:0.0.0.0:10024:SERVER</Drone_Pi_Connection>
-    <GCS_Telemetry_Connection>TCP/IP:192.168.0.189:15551:CLIENT</GCS_Telemetry_Connection>
+    <RTK_Base_Station_Address>192.168.2.15</RTK_Base_Station_Address>
+    <Drone_Telemetry_Connection>UDP:0.0.0.0:10024:SERVER</Drone_Telemetry_Connection>
+    <Drone_Pi_Connection>TCP/IP:192.168.42.33:14540:CLIENT</Drone_Pi_Connection>
+    <GCS_Telemetry_Connection>TCP/IP:192.168.28.110:2102:CLIENT</GCS_Telemetry_Connection>
     <GCS_Pi_Connection>TCP/IP:192.168.42.34:14540:CLIENT</GCS_Pi_Connection>
-    <GCS_RTK_Connection>TCP/IP:192.168.0.189:9000:CLIENT</GCS_RTK_Connection>
+    <GCS_RTK_Connection>SERIAL:COM5:115200:CLIENT</GCS_RTK_Connection>
     <Battery_FS_Voltage>49.0</Battery_FS_Voltage>
-    <Battery_FS_Action>0</Battery_FS_Action>
+    <Battery_FS_Action>1</Battery_FS_Action>
     <Disable_Battery_Failsafe_on_Disarm>false</Disable_Battery_Failsafe_on_Disarm>
     <Enable_Hotkeys>true</Enable_Hotkeys>
     <RTK_GPS_DEVICE>0</RTK_GPS_DEVICE>
@@ -71,13 +70,13 @@
     <Guided_RTL_When_Possible>true</Guided_RTL_When_Possible>
     <Nudge_Distance_Meters>1.0</Nudge_Distance_Meters>
     <Nudge_Vertical_Distance_Meters>1.0</Nudge_Vertical_Distance_Meters>
-    <MavLink_V2>false</MavLink_V2>
+    <MavLink_V2>true</MavLink_V2>
     <Confirm_Abort>false</Confirm_Abort>
     <Confirm_Keyboard_Abort>false</Confirm_Keyboard_Abort>
     <Desktop_Notifications>false</Desktop_Notifications>
     <NO_RC_RECEIVER>true</NO_RC_RECEIVER>
-    <USE_THROTTLE_VERIFIER>false</USE_THROTTLE_VERIFIER>
-    <Automatically_Activate_Follow_Me_Mode>false</Automatically_Activate_Follow_Me_Mode>
+    <USE_THROTTLE_VERIFIER>true</USE_THROTTLE_VERIFIER>
+    <Automatically_Activate_Follow_Me_Mode>true</Automatically_Activate_Follow_Me_Mode>
     <Show_Forward_Cone>true</Show_Forward_Cone>
     <Show_Backward_Cone>false</Show_Backward_Cone>
     <Show_GCS_Forward_Cone>true</Show_GCS_Forward_Cone>
@@ -128,7 +127,7 @@
     </MessageGroupRateMap>
     <Basic_Mode>false</Basic_Mode>
     <GPS2_Is_TB_Position>false</GPS2_Is_TB_Position>
-    <Use_NextVision_Connection>true</Use_NextVision_Connection>
+    <Use_NextVision_Connection>false</Use_NextVision_Connection>
     <NextVision_Video_Connection_Refresh_Seconds>10.0</NextVision_Video_Connection_Refresh_Seconds>
     <Video_URL>rtsp://192.168.0.201:8554/live0</Video_URL>
     <Enforce_Emergency_Landing_Location>true</Enforce_Emergency_Landing_Location>
