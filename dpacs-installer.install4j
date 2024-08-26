@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <install4j version="8.0.11" transformSequenceNumber="8">
   <directoryPresets config="./build" />
-  <application name="${compiler:applicationFullName}" applicationId="Seraph-${compiler:sys.version}" mediaDir="build/installers" mediaFilePattern="${compiler:sys.shortName}-${compiler:sys.platform}-${compiler:sys.version}" shortName="${compiler:applicationShortName}" publisher="FutureTek Software Consulting LLC" publisherWeb="https://www.futuretek.com" version="${compiler:releaseVersion}" convertDotsToUnderscores="false" macVolumeId="831fa67e981a7e55" javaMinVersion="1.8" javaMaxVersion="1.8">
+  <application name="${compiler:applicationFullName}" applicationId="Seraph-${compiler:sys.version}" mediaDir="build/installers" mediaFilePattern="${compiler:sys.shortName}-${compiler:sys.platform}-${compiler:sys.version}" shortName="${compiler:applicationShortName}" publisher="FutureTek Software Consulting LLC" publisherWeb="https://www.futuretek.com" version="${compiler:releaseVersion}" convertDotsToUnderscores="false" macVolumeId="831fa67e981a7e55" javaMinVersion="11" javaMaxVersion="11" jdkMode="jdk" jdkName="JDK 11.0">
     <variables>
       <variable name="variant" description="The installer variant being compiled" />
       <variable name="variantOverlay" description="Path to directory containing the variant's overlay" />
@@ -191,7 +191,7 @@ context.goForward(1, true, true);
                           </property>
                           <property name="fragmentInsertMode" type="enum" class="com.install4j.runtime.beans.actions.xml.FragmentInsertMode" value="REPLACE" />
                           <property name="fragmentText" type="string">&lt;map&gt;
-			&lt;entry key="ActiveConfiguration" value="Moving Base RibbonBar"/&gt;
+			&lt;entry key="ActiveConfiguration" value="Tenacity"/&gt;
 				  
                         &lt;entry key="DisplayDefaultConfiguration" value="true"/&gt;
                     &lt;/map&gt;
@@ -277,15 +277,25 @@ context.goForward(1, true, true);
                           <string>${installer:projectDataDir}/ProjectData/Globals/Files/RibbonBarConfigurations</string>
                         </object>
                       </property>
-                      <property name="files" type="array" class="java.io.File" length="2">
+                      <property name="files" type="array" class="java.io.File" length="4">
                         <element index="0">
                           <object class="java.io.File">
-                            <string>conf/CustomHomeRibbonBarConfigMovingBase.xml</string>
+                            <string>conf/CustomHomeRibbonBarConfigTenacity.xml</string>
                           </object>
                         </element>
                         <element index="1">
                           <object class="java.io.File">
+                            <string>conf/CustomHomeRibbonBarConfigMovingBase.xml</string>
+                          </object>
+                        </element>
+                        <element index="2">
+                          <object class="java.io.File">
                             <string>conf/CustomHomeRibbonBarConfigStaticBase.xml</string>
+                          </object>
+                        </element>
+                        <element index="3">
+                          <object class="java.io.File">
+                            <string>conf/CustomHomeRibbonBarRover.xml</string>
                           </object>
                         </element>
                       </property>

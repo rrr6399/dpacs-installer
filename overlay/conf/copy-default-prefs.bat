@@ -1,1 +1,2 @@
-copy Default_STS_DPACS_Preferences.xml DefaultDpacsPreferences.xml
+rem copy Default_STS_DPACS_Preferences.xml DefaultDpacsPreferences.xml
+copy DpacsPreferencesMovingBase.xml DefaultDpacsPreferences.xml

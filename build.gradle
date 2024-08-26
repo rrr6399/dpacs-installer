@@ -1,9 +1,12 @@
 plugins {
-    id 'gov.raptor.gradle.plugins.installer-support' version '3.0.1'
+    id 'java-library'
+    id 'gov.raptor.gradle.plugins.jboss-modules' version '2.0' apply false
+    id 'gov.raptor.gradle.plugins.installer-support' version '5.4.0' apply false
 }
 
+    //id 'gov.raptor.gradle.plugins.installer-support' version '4.0.2' apply false
 wrapper {
-    gradleVersion = '7.1.1'
+    gradleVersion = '7.3.3'
 }
 
 ext {

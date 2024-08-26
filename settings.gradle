@@ -3,6 +3,9 @@ pluginManagement {
         gradlePluginPortal() // Include public Gradle plugin portal
         mavenLocal()
     }
+   // dependencies {
+   //    classpath "org.cyclonedx:cyclonedx-gradle-plugin:1.9.0"
+   //}
 }
 
 rootProject.name = 'Dpacs'
