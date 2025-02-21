@@ -4,7 +4,6 @@ plugins {
     id 'gov.raptor.gradle.plugins.installer-support' version '5.4.0' apply false
 }
 
-    //id 'gov.raptor.gradle.plugins.installer-support' version '4.0.2' apply false
 wrapper {
     gradleVersion = '7.3.3'
 }

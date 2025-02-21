@@ -3,8 +3,6 @@ plugins {
     id 'gov.raptor.gradle.plugins.jboss-modules' version '2.0' apply false
     id 'gov.raptor.gradle.plugins.installer-support' version '4.0.2' apply false
 }
-
-    //id 'gov.raptor.gradle.plugins.installer-support' version '3.0.1'
     //id "org.cyclonedx.bom" version "1.9.0"
 
 wrapper {
