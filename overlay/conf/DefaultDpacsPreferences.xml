@@ -40,6 +40,7 @@
     <Preferred_Mission_Type>Guided</Preferred_Mission_Type>
     <Enable_Waypoint_Editing>true</Enable_Waypoint_Editing>
     <Enable_Simple_GUI>true</Enable_Simple_GUI>
+    <Enable_Super_Simple_GUI>true</Enable_Super_Simple_GUI>
     <Use_GCS_Altitude_Offset_Correction>false</Use_GCS_Altitude_Offset_Correction>
     <Use_GCS_Pressure_Offset_Correction>false</Use_GCS_Pressure_Offset_Correction>
     <Use_RTK_Altitude_Offset_Correction>false</Use_RTK_Altitude_Offset_Correction>
@@ -48,16 +49,17 @@
     <RTK_Port>9000</RTK_Port>
     <RTK_Base_Station_Address>192.168.2.15</RTK_Base_Station_Address>
     <Drone_Telemetry_Connection>UDP:0.0.0.0:10024:SERVER</Drone_Telemetry_Connection>
+    <NextVision_Connection>UDP:0.0.0.0:10024:SERVER</NextVision_Connection>
     <Drone_Pi_Connection>TCP/IP:192.168.42.33:14540:CLIENT</Drone_Pi_Connection>
-    <GCS_Telemetry_Connection>TCP/IP:192.168.28.110:2102:CLIENT</GCS_Telemetry_Connection>
+    <GCS_Telemetry_Connection>UDP:192.168.30.134:15551:CLIENT</GCS_Telemetry_Connection>
     <GCS_Pi_Connection>TCP/IP:192.168.42.34:14540:CLIENT</GCS_Pi_Connection>
-    <GCS_RTK_Connection>SERIAL:COM5:115200:CLIENT</GCS_RTK_Connection>
+    <GCS_RTK_Connection>SERIAL:COM7:460800:CLIENT</GCS_RTK_Connection>
     <Battery_FS_Voltage>49.0</Battery_FS_Voltage>
     <Battery_FS_Action>1</Battery_FS_Action>
     <Disable_Battery_Failsafe_on_Disarm>false</Disable_Battery_Failsafe_on_Disarm>
     <Enable_Hotkeys>true</Enable_Hotkeys>
     <RTK_GPS_DEVICE>0</RTK_GPS_DEVICE>
-    <Target_Altitude_Meters>1.0</Target_Altitude_Meters>
+    <Target_Altitude_Meters>3.0</Target_Altitude_Meters>
     <Final_Altitude_Meters>5.0</Final_Altitude_Meters>
     <Hover_Amps>20.0</Hover_Amps>
     <AMPS_PER_MPS_GRADIENT>1.0</AMPS_PER_MPS_GRADIENT>
@@ -65,18 +67,19 @@
     <Final_Landing_Height_For_Guided_RTL>0.1</Final_Landing_Height_For_Guided_RTL>
     <MONITOR_BATTERY_CAPACITY>false</MONITOR_BATTERY_CAPACITY>
     <PRECISION_LANDING_USING_RTK_OFFSETS>true</PRECISION_LANDING_USING_RTK_OFFSETS>
-    <AUTO_KILL_ON_PRECISION_LANDING>true</AUTO_KILL_ON_PRECISION_LANDING>
-    <AUTO_KILL_ON_LANDING_TOLERANCE_CM>6</AUTO_KILL_ON_LANDING_TOLERANCE_CM>
-    <Guided_RTL_When_Possible>true</Guided_RTL_When_Possible>
+    <AUTO_KILL_ON_PRECISION_LANDING>false</AUTO_KILL_ON_PRECISION_LANDING>
+    <AUTO_KILL_ON_LANDING_TOLERANCE_CM>6.0</AUTO_KILL_ON_LANDING_TOLERANCE_CM>
+    <Guided_RTL_When_Possible>false</Guided_RTL_When_Possible>
     <Nudge_Distance_Meters>1.0</Nudge_Distance_Meters>
-    <Nudge_Vertical_Distance_Meters>1.0</Nudge_Vertical_Distance_Meters>
+    <Nudge_Vertical_Distance_Meters>5.0</Nudge_Vertical_Distance_Meters>
     <MavLink_V2>true</MavLink_V2>
-    <Confirm_Abort>false</Confirm_Abort>
-    <Confirm_Keyboard_Abort>false</Confirm_Keyboard_Abort>
-    <Desktop_Notifications>false</Desktop_Notifications>
+    <Confirm_Abort>true</Confirm_Abort>
+    <Confirm_Keyboard_Abort>true</Confirm_Keyboard_Abort>
+    <Desktop_Notifications>true</Desktop_Notifications>
     <NO_RC_RECEIVER>true</NO_RC_RECEIVER>
     <USE_THROTTLE_VERIFIER>true</USE_THROTTLE_VERIFIER>
-    <Automatically_Activate_Follow_Me_Mode>true</Automatically_Activate_Follow_Me_Mode>
+    <Automatically_Activate_Follow_Me_Mode>false</Automatically_Activate_Follow_Me_Mode>
+    <Automatically_Connect_To_Drone>true</Automatically_Connect_To_Drone>
     <Show_Forward_Cone>true</Show_Forward_Cone>
     <Show_Backward_Cone>false</Show_Backward_Cone>
     <Show_GCS_Forward_Cone>true</Show_GCS_Forward_Cone>
@@ -130,7 +133,7 @@
     <Use_NextVision_Connection>false</Use_NextVision_Connection>
     <NextVision_Video_Connection_Refresh_Seconds>10.0</NextVision_Video_Connection_Refresh_Seconds>
     <Video_URL>rtsp://192.168.0.201:8554/live0</Video_URL>
-    <Enforce_Emergency_Landing_Location>true</Enforce_Emergency_Landing_Location>
+    <Enforce_Emergency_Landing_Location>false</Enforce_Emergency_Landing_Location>
     <Emergency_Landing_Location_Range_Meters>10.0</Emergency_Landing_Location_Range_Meters>
     <Emergency_Landing_Location_Relative_Angle_Deg>90.0</Emergency_Landing_Location_Relative_Angle_Deg>
     <Use_GPS_For_Velocity_Direction>true</Use_GPS_For_Velocity_Direction>

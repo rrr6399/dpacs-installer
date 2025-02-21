@@ -191,7 +191,7 @@ context.goForward(1, true, true);
                           </property>
                           <property name="fragmentInsertMode" type="enum" class="com.install4j.runtime.beans.actions.xml.FragmentInsertMode" value="REPLACE" />
                           <property name="fragmentText" type="string">&lt;map&gt;
-			&lt;entry key="ActiveConfiguration" value="Moving Base RibbonBar"/&gt;
+			&lt;entry key="ActiveConfiguration" value="Static Base RibbonBar"/&gt;
 				  
                         &lt;entry key="DisplayDefaultConfiguration" value="true"/&gt;
                     &lt;/map&gt;

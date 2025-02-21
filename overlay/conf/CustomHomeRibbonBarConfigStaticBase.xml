@@ -120,6 +120,10 @@
                     <pluginUniqueKey>DPACS</pluginUniqueKey>
                     <buttons>
                         <button>
+                            <name>Super Simple Pilot Controls</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                        <button>
                             <name>Simple Pilot Controls</name>
                             <pluginUniqueKey>DPACS</pluginUniqueKey>
                         </button>
@@ -157,6 +161,10 @@
                         </button>
                         <button>
                             <name>Edit Preferences</name>
+                            <pluginUniqueKey>DPACS</pluginUniqueKey>
+                        </button>
+                        <button>
+                            <name>STS Rover Controls</name>
                             <pluginUniqueKey>DPACS</pluginUniqueKey>
                         </button>
                     </buttons>
@@ -294,6 +302,10 @@
                         </button>
                         <button>
                             <name>Tractor Beam</name>
+                            <raptorButtonId>DEVICES_DEVICES_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>NextVision Camera</name>
                             <raptorButtonId>DEVICES_DEVICES_PLUGIN</raptorButtonId>
                         </button>
                     </buttons>
@@ -823,7 +835,12 @@
                     <name>User Favorites</name>
                     <raptorBandId>VIEW_USER_FAVORITES</raptorBandId>
                     <isVisible>true</isVisible>
-                    <buttons/>
+                    <buttons>
+                        <button>
+                            <name>Kelly Reeves Stadium</name>
+                            <raptorButtonId>VIEW_USER_FAVORITES_FAVORITE</raptorButtonId>
+                        </button>
+                    </buttons>
                     <excludedButtons/>
                 </band>
             </bands>
@@ -853,6 +870,10 @@
                     <buttons>
                         <button>
                             <name>Gamepad</name>
+                            <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
+                        </button>
+                        <button>
+                            <name>STS Rover Controls</name>
                             <raptorButtonId>APPS_APPS_PLUGIN</raptorButtonId>
                         </button>
                     </buttons>
