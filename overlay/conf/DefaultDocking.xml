@@ -20,6 +20,22 @@
 												<format>dock.PlaceholderList</format>
 												<entry>
 													<key shared="false">
+														<placeholder>dock.multi.\12\ dockables</placeholder>
+													</key>
+													<item key="item" type="b">true</item>
+													<item key="item-keys" type="a">
+														<item type="s">x</item>
+														<item type="s">width</item>
+														<item type="s">y</item>
+														<item type="s">height</item>
+													</item>
+													<item key="item.x" type="i">0</item>
+													<item key="item.width" type="i">1914</item>
+													<item key="item.y" type="i">0</item>
+													<item key="item.height" type="i">836</item>
+												</entry>
+												<entry>
+													<key shared="false">
 														<placeholder>dock.multi.\38\ dockables</placeholder>
 													</key>
 													<item key="convert" type="b">true</item>
@@ -34,8 +50,8 @@
 													</item>
 													<item key="dock.fullscreen" type="b">false</item>
 													<item key="dock.x" type="i">0</item>
-													<item key="dock.width" type="i">1921</item>
-													<item key="dock.y" type="i">2</item>
+													<item key="dock.width" type="i">1922</item>
+													<item key="dock.y" type="i">1</item>
 													<item key="dock.id" type="i">0</item>
 													<item key="dock.placeholder" type="s">dock.multi.\38\ dockables</item>
 													<item key="dock.height" type="i">1140</item>
@@ -47,8 +63,8 @@
 														<item type="s">height</item>
 													</item>
 													<item key="item.x" type="i">0</item>
-													<item key="item.width" type="i">1921</item>
-													<item key="item.y" type="i">2</item>
+													<item key="item.width" type="i">1922</item>
+													<item key="item.y" type="i">1</item>
 													<item key="item.height" type="i">1140</item>
 												</entry>
 											</placeholders>
@@ -102,6 +118,7 @@
 												</entry>
 												<entry>
 													<key shared="false">
+														<placeholder>dock.multi.\3\ dockables</placeholder>
 														<placeholder>dock.multi.\16\ dockables</placeholder>
 													</key>
 													<item key="convert" type="b">true</item>
@@ -122,6 +139,12 @@
 													<key shared="false">
 														<placeholder>dock.multi.\9\ dockables</placeholder>
 													</key>
+												</entry>
+												<entry>
+													<key shared="false">
+														<placeholder>dock.multi.\16\ dockables</placeholder>
+														<placeholder>dock.multi.\8\ dockables</placeholder>
+													</key>
 													<item key="convert" type="b">true</item>
 													<item key="convert-keys" type="a">
 														<item type="s">size</item>
@@ -133,7 +156,26 @@
 													<item key="dock.size" type="i">300</item>
 													<item key="dock.index" type="i">2</item>
 													<item key="dock.id" type="i">2</item>
-													<item key="dock.placeholder" type="s">dock.multi.\9\ dockables</item>
+													<item key="dock.placeholder" type="s">dock.multi.\8\ dockables</item>
+													<item key="dock.hold" type="b">false</item>
+												</entry>
+												<entry>
+													<key shared="false">
+														<placeholder>dock.multi.\23\ dockables</placeholder>
+														<placeholder>dock.multi.\14\ dockables</placeholder>
+													</key>
+													<item key="convert" type="b">true</item>
+													<item key="convert-keys" type="a">
+														<item type="s">size</item>
+														<item type="s">index</item>
+														<item type="s">id</item>
+														<item type="s">placeholder</item>
+														<item type="s">hold</item>
+													</item>
+													<item key="dock.size" type="i">569</item>
+													<item key="dock.index" type="i">3</item>
+													<item key="dock.id" type="i">3</item>
+													<item key="dock.placeholder" type="s">dock.multi.\14\ dockables</item>
 													<item key="dock.hold" type="b">false</item>
 												</entry>
 											</placeholders>
@@ -165,10 +207,19 @@
 										<children ignore="false"/>
 									</child>
 									<child>
-										<layout factory="delegate_dockables" placeholder="dock.multi.\9\ dockables">
-											<id>9 dockables</id>
+										<layout factory="delegate_dockables" placeholder="dock.multi.\8\ dockables">
+											<id>8 dockables</id>
 											<multiple>
 												<dockableId>DPACS Status</dockableId>
+											</multiple>
+										</layout>
+										<children ignore="false"/>
+									</child>
+									<child>
+										<layout factory="delegate_dockables" placeholder="dock.multi.\14\ dockables">
+											<id>14 dockables</id>
+											<multiple>
+												<dockableId>Next Vision Camera</dockableId>
 											</multiple>
 										</layout>
 										<children ignore="false"/>
@@ -205,24 +256,6 @@
 												</entry>
 												<entry>
 													<key shared="false">
-														<placeholder>dock.multi.\5\ dockables</placeholder>
-													</key>
-													<item key="convert" type="b">true</item>
-													<item key="convert-keys" type="a">
-														<item type="s">size</item>
-														<item type="s">index</item>
-														<item type="s">id</item>
-														<item type="s">placeholder</item>
-														<item type="s">hold</item>
-													</item>
-													<item key="dock.size" type="i">218</item>
-													<item key="dock.index" type="i">1</item>
-													<item key="dock.id" type="i">1</item>
-													<item key="dock.placeholder" type="s">dock.multi.\5\ dockables</item>
-													<item key="dock.hold" type="b">false</item>
-												</entry>
-												<entry>
-													<key shared="false">
 														<placeholder>dock.multi.\22\ dockables</placeholder>
 													</key>
 													<item key="convert" type="b">true</item>
@@ -234,14 +267,128 @@
 														<item type="s">hold</item>
 													</item>
 													<item key="dock.size" type="i">100</item>
-													<item key="dock.index" type="i">2</item>
-													<item key="dock.id" type="i">2</item>
+													<item key="dock.index" type="i">1</item>
+													<item key="dock.id" type="i">1</item>
 													<item key="dock.placeholder" type="s">dock.multi.\22\ dockables</item>
 													<item key="dock.hold" type="b">false</item>
 												</entry>
 												<entry>
 													<key shared="false">
-														<placeholder>dock.multi.\12\ dockables</placeholder>
+														<placeholder>dock.multi.\0\ globes</placeholder>
+													</key>
+												</entry>
+												<entry>
+													<key shared="false">
+														<placeholder>dock.multi.\2\ dockables</placeholder>
+													</key>
+													<item key="convert" type="b">true</item>
+													<item key="convert-keys" type="a">
+														<item type="s">size</item>
+														<item type="s">index</item>
+														<item type="s">id</item>
+														<item type="s">placeholder</item>
+														<item type="s">hold</item>
+													</item>
+													<item key="dock.size" type="i">200</item>
+													<item key="dock.index" type="i">2</item>
+													<item key="dock.id" type="i">2</item>
+													<item key="dock.placeholder" type="s">dock.multi.\2\ dockables</item>
+													<item key="dock.hold" type="b">false</item>
+												</entry>
+												<entry>
+													<key shared="false">
+														<placeholder>dock.multi.\3\ dockables</placeholder>
+														<placeholder>dock.multi.\2\ dockables</placeholder>
+													</key>
+													<item key="convert" type="b">true</item>
+													<item key="convert-keys" type="a">
+														<item type="s">size</item>
+														<item type="s">index</item>
+														<item type="s">id</item>
+														<item type="s">placeholder</item>
+														<item type="s">hold</item>
+													</item>
+													<item key="dock.size" type="i">246</item>
+													<item key="dock.index" type="i">3</item>
+													<item key="dock.id" type="i">3</item>
+													<item key="dock.placeholder" type="s">dock.multi.\3\ dockables</item>
+													<item key="dock.hold" type="b">false</item>
+												</entry>
+												<entry>
+													<key shared="false">
+														<placeholder>dock.multi.\4\ dockables</placeholder>
+													</key>
+													<item key="convert" type="b">true</item>
+													<item key="convert-keys" type="a">
+														<item type="s">size</item>
+														<item type="s">index</item>
+														<item type="s">id</item>
+														<item type="s">placeholder</item>
+														<item type="s">hold</item>
+													</item>
+													<item key="dock.size" type="i">218</item>
+													<item key="dock.index" type="i">4</item>
+													<item key="dock.id" type="i">4</item>
+													<item key="dock.placeholder" type="s">dock.multi.\4\ dockables</item>
+													<item key="dock.hold" type="b">false</item>
+												</entry>
+												<entry>
+													<key shared="false">
+														<placeholder>dock.multi.\7\ dockables</placeholder>
+													</key>
+													<item key="convert" type="b">true</item>
+													<item key="convert-keys" type="a">
+														<item type="s">size</item>
+														<item type="s">index</item>
+														<item type="s">id</item>
+														<item type="s">placeholder</item>
+														<item type="s">hold</item>
+													</item>
+													<item key="dock.size" type="i">200</item>
+													<item key="dock.index" type="i">5</item>
+													<item key="dock.id" type="i">5</item>
+													<item key="dock.placeholder" type="s">dock.multi.\7\ dockables</item>
+													<item key="dock.hold" type="b">false</item>
+												</entry>
+												<entry>
+													<key shared="false">
+														<placeholder>dock.multi.\9\ dockables</placeholder>
+													</key>
+													<item key="convert" type="b">true</item>
+													<item key="convert-keys" type="a">
+														<item type="s">size</item>
+														<item type="s">index</item>
+														<item type="s">id</item>
+														<item type="s">placeholder</item>
+														<item type="s">hold</item>
+													</item>
+													<item key="dock.size" type="i">233</item>
+													<item key="dock.index" type="i">6</item>
+													<item key="dock.id" type="i">6</item>
+													<item key="dock.placeholder" type="s">dock.multi.\9\ dockables</item>
+													<item key="dock.hold" type="b">false</item>
+												</entry>
+												<entry>
+													<key shared="false">
+														<placeholder>dock.multi.\10\ dockables</placeholder>
+													</key>
+													<item key="convert" type="b">true</item>
+													<item key="convert-keys" type="a">
+														<item type="s">size</item>
+														<item type="s">index</item>
+														<item type="s">id</item>
+														<item type="s">placeholder</item>
+														<item type="s">hold</item>
+													</item>
+													<item key="dock.size" type="i">233</item>
+													<item key="dock.index" type="i">7</item>
+													<item key="dock.id" type="i">7</item>
+													<item key="dock.placeholder" type="s">dock.multi.\10\ dockables</item>
+													<item key="dock.hold" type="b">false</item>
+												</entry>
+												<entry>
+													<key shared="false">
+														<placeholder>dock.multi.\11\ dockables</placeholder>
 													</key>
 													<item key="convert" type="b">true</item>
 													<item key="convert-keys" type="a">
@@ -252,14 +399,14 @@
 														<item type="s">hold</item>
 													</item>
 													<item key="dock.size" type="i">258</item>
-													<item key="dock.index" type="i">3</item>
-													<item key="dock.id" type="i">3</item>
-													<item key="dock.placeholder" type="s">dock.multi.\12\ dockables</item>
+													<item key="dock.index" type="i">8</item>
+													<item key="dock.id" type="i">8</item>
+													<item key="dock.placeholder" type="s">dock.multi.\11\ dockables</item>
 													<item key="dock.hold" type="b">false</item>
 												</entry>
 												<entry>
 													<key shared="false">
-														<placeholder>dock.multi.\0\ globes</placeholder>
+														<placeholder>dock.multi.\12\ dockables</placeholder>
 													</key>
 												</entry>
 												<entry>
@@ -287,15 +434,6 @@
 										<children ignore="false"/>
 									</child>
 									<child>
-										<layout factory="delegate_dockables" placeholder="dock.multi.\5\ dockables">
-											<id>5 dockables</id>
-											<multiple>
-												<dockableId>Plots</dockableId>
-											</multiple>
-										</layout>
-										<children ignore="false"/>
-									</child>
-									<child>
 										<layout factory="delegate_dockables" placeholder="dock.multi.\22\ dockables">
 											<id>22 dockables</id>
 											<multiple>
@@ -305,8 +443,62 @@
 										<children ignore="false"/>
 									</child>
 									<child>
-										<layout factory="delegate_dockables" placeholder="dock.multi.\12\ dockables">
-											<id>12 dockables</id>
+										<layout factory="delegate_dockables" placeholder="dock.multi.\2\ dockables">
+											<id>2 dockables</id>
+											<multiple>
+												<dockableId>Configuration Editor</dockableId>
+											</multiple>
+										</layout>
+										<children ignore="false"/>
+									</child>
+									<child>
+										<layout factory="delegate_dockables" placeholder="dock.multi.\3\ dockables">
+											<id>3 dockables</id>
+											<multiple>
+												<dockableId>LOB Controls</dockableId>
+											</multiple>
+										</layout>
+										<children ignore="false"/>
+									</child>
+									<child>
+										<layout factory="delegate_dockables" placeholder="dock.multi.\4\ dockables">
+											<id>4 dockables</id>
+											<multiple>
+												<dockableId>Plots</dockableId>
+											</multiple>
+										</layout>
+										<children ignore="false"/>
+									</child>
+									<child>
+										<layout factory="delegate_dockables" placeholder="dock.multi.\7\ dockables">
+											<id>7 dockables</id>
+											<multiple>
+												<dockableId>DPACS Mission Table</dockableId>
+											</multiple>
+										</layout>
+										<children ignore="false"/>
+									</child>
+									<child>
+										<layout factory="delegate_dockables" placeholder="dock.multi.\9\ dockables">
+											<id>9 dockables</id>
+											<multiple>
+												<dockableId>EKF Status</dockableId>
+											</multiple>
+										</layout>
+										<children ignore="false"/>
+									</child>
+									<child>
+										<layout factory="delegate_dockables" placeholder="dock.multi.\10\ dockables">
+											<id>10 dockables</id>
+											<multiple>
+												<dockableId>Vibration Status</dockableId>
+											</multiple>
+										</layout>
+										<children ignore="false"/>
+									</child>
+									<child>
+										<layout factory="delegate_dockables" placeholder="dock.multi.\11\ dockables">
+											<id>11 dockables</id>
 											<multiple>
 												<dockableId>Ground RTK GPS</dockableId>
 											</multiple>
@@ -323,39 +515,56 @@
 										<root>true</root>
 										<content delegate="SplitDockStationFactory">
 											<fullscreen-action>false</fullscreen-action>
-											<node nodeId="1740165476158" orientation="HORIZONTAL" divider="0.5">
-												<leaf id="-1" nodeId="1740165476160">
+											<node nodeId="1740265873237" orientation="HORIZONTAL" divider="0.5">
+												<leaf id="-1" nodeId="1740265873239">
 													<placeholders>
-														<placeholder>dock.multi.\38\ dockables</placeholder>
+														<placeholder>dock.multi.\12\ dockables</placeholder>
 													</placeholders>
 												</leaf>
-												<node nodeId="1740165360776" orientation="VERTICAL" divider="0.5">
-													<node nodeId="1740165373568" orientation="HORIZONTAL" divider="0.35138794854434663">
-														<leaf id="1" nodeId="1740165360774">
-															<placeholders>
-																<placeholder>dock.multi.\0\ globes</placeholder>
-															</placeholders>
-														</leaf>
-														<leaf id="0" nodeId="1740165373566">
-															<placeholders>
-																<placeholder>dock.multi.\2\ dockables</placeholder>
-															</placeholders>
-														</leaf>
-													</node>
-													<node nodeId="1740165332693" orientation="VERTICAL" divider="0.5">
-														<leaf id="-1" nodeId="1740165476164">
-															<placeholders>
-																<placeholder>dock.multi.\37\ dockables</placeholder>
-															</placeholders>
-														</leaf>
+												<node nodeId="1740165476158" orientation="HORIZONTAL" divider="0.5">
+													<leaf id="-1" nodeId="1740265873241">
+														<placeholders>
+															<placeholder>dock.multi.\38\ dockables</placeholder>
+														</placeholders>
+													</leaf>
+													<node nodeId="1740165360776" orientation="VERTICAL" divider="0.5">
+														<node nodeId="1740165373568" orientation="HORIZONTAL" divider="0.35138794854434663">
+															<node nodeId="1740265828812" orientation="HORIZONTAL" divider="0.2954059829059829">
+																<leaf id="1" nodeId="1740165360774">
+																	<placeholders>
+																		<placeholder>dock.multi.\0\ globes</placeholder>
+																	</placeholders>
+																	<placeholder-map>
+																		<version>0</version>
+																		<format>dock.PlaceholderList</format>
+																		<entry>
+																			<key shared="false">
+																				<placeholder>dock.multi.\0\ globes</placeholder>
+																			</key>
+																		</entry>
+																	</placeholder-map>
+																</leaf>
+																<leaf id="0" nodeId="1740265828810">
+																	<placeholders>
+																		<placeholder>dock.multi.\11\ dockables</placeholder>
+																		<placeholder>dock.multi.\37\ dockables</placeholder>
+																	</placeholders>
+																</leaf>
+															</node>
+															<leaf id="-1" nodeId="1740265873243">
+																<placeholders>
+																	<placeholder>dock.multi.\2\ dockables</placeholder>
+																</placeholders>
+															</leaf>
+														</node>
 														<node nodeId="1740074608027" orientation="VERTICAL" divider="0.5">
-															<leaf id="-1" nodeId="1740165476166">
+															<leaf id="-1" nodeId="1740265873247">
 																<placeholders>
 																	<placeholder>dock.multi.\3\ dockables</placeholder>
 																</placeholders>
 															</leaf>
 															<node nodeId="1509193590398" orientation="HORIZONTAL" divider="0.1793826441467676">
-																<leaf id="-1" nodeId="1740165476168">
+																<leaf id="-1" nodeId="1740265873249">
 																	<placeholders>
 																		<placeholder>dock.multi.\23\ dockables</placeholder>
 																		<placeholder>dock.multi.\14\ dockables</placeholder>
@@ -365,12 +574,12 @@
 																<node nodeId="1649806984854" orientation="HORIZONTAL" divider="0.0">
 																	<node nodeId="1647968645600" orientation="VERTICAL" divider="0.28763769889840884">
 																		<node nodeId="1647968651961" orientation="VERTICAL" divider="0.47">
-																			<leaf id="-1" nodeId="1740165476170">
+																			<leaf id="-1" nodeId="1740265873251">
 																				<placeholders>
 																					<placeholder>dock.multi.\8\ dockables</placeholder>
 																				</placeholders>
 																			</leaf>
-																			<leaf id="-1" nodeId="1740165476172">
+																			<leaf id="-1" nodeId="1740265873253">
 																				<placeholders>
 																					<placeholder>dock.multi.\9\ dockables</placeholder>
 																					<placeholder>dock.multi.\4\ dockables</placeholder>
@@ -378,7 +587,7 @@
 																			</leaf>
 																		</node>
 																		<node nodeId="1649905569331" orientation="HORIZONTAL" divider="0.22148058252427186">
-																			<leaf id="-1" nodeId="1740165476174">
+																			<leaf id="-1" nodeId="1740265873255">
 																				<placeholders>
 																					<placeholder>dock.multi.\36\ dockables</placeholder>
 																				</placeholders>
@@ -387,7 +596,7 @@
 																					<format>dock.PlaceholderList</format>
 																				</placeholder-map>
 																			</leaf>
-																			<leaf id="-1" nodeId="1740165476176">
+																			<leaf id="-1" nodeId="1740265873257">
 																				<placeholders>
 																					<placeholder>dock.multi.\21\ dockables</placeholder>
 																					<placeholder>dock.multi.\29\ dockables</placeholder>
@@ -405,7 +614,7 @@
 																			</leaf>
 																		</node>
 																	</node>
-																	<leaf id="-1" nodeId="1740165476178">
+																	<leaf id="-1" nodeId="1740265873259">
 																		<placeholders>
 																			<placeholder>dock.multi.\17\ dockables</placeholder>
 																		</placeholders>
@@ -426,8 +635,8 @@
 								</adjacent>
 								<children ignore="false">
 									<child>
-										<layout factory="delegate_dockables" placeholder="dock.multi.\2\ dockables">
-											<id>2 dockables</id>
+										<layout factory="delegate_dockables" placeholder="dock.multi.\37\ dockables">
+											<id>37 dockables</id>
 											<multiple>
 												<dockableId>Simple Pilot Controls</dockableId>
 											</multiple>
@@ -441,11 +650,11 @@
 												<globeId>1</globeId>
 												<description>Camera Eye</description>
 												<owner>User</owner>
-												<latitude>38.602229599999994</latitude>
-												<longitude>-109.57534980000001</longitude>
-												<elevation>1214.4411366399847</elevation>
-												<heading>-0.0232229740117975</heading>
-												<pitch>8.466437488068245E-18</pitch>
+												<latitude>38.6022307</latitude>
+												<longitude>-109.5753509</longitude>
+												<elevation>1215.0</elevation>
+												<heading>0.0</heading>
+												<pitch>0.0</pitch>
 												<zoom>500.0</zoom>
 											</multiple>
 										</layout>
@@ -483,25 +692,8 @@
 												</entry>
 												<entry>
 													<key shared="false">
-														<placeholder>dock.multi.\15\ dockables</placeholder>
-													</key>
-													<item key="convert" type="b">true</item>
-													<item key="convert-keys" type="a">
-														<item type="s">size</item>
-														<item type="s">index</item>
-														<item type="s">id</item>
-														<item type="s">placeholder</item>
-														<item type="s">hold</item>
-													</item>
-													<item key="dock.size" type="i">646</item>
-													<item key="dock.index" type="i">1</item>
-													<item key="dock.id" type="i">1</item>
-													<item key="dock.placeholder" type="s">dock.multi.\15\ dockables</item>
-													<item key="dock.hold" type="b">false</item>
-												</entry>
-												<entry>
-													<key shared="false">
 														<placeholder>dock.multi.\33\ dockables</placeholder>
+														<placeholder>dock.multi.\20\ dockables</placeholder>
 													</key>
 													<item key="convert" type="b">true</item>
 													<item key="convert-keys" type="a">
@@ -512,14 +704,13 @@
 														<item type="s">hold</item>
 													</item>
 													<item key="dock.size" type="i">1150</item>
-													<item key="dock.index" type="i">2</item>
-													<item key="dock.id" type="i">2</item>
+													<item key="dock.index" type="i">1</item>
+													<item key="dock.id" type="i">1</item>
 													<item key="dock.placeholder" type="s">dock.multi.\33\ dockables</item>
 													<item key="dock.hold" type="b">false</item>
 												</entry>
 												<entry>
 													<key shared="false">
-														<placeholder>dock.multi.\16\ dockables</placeholder>
 														<placeholder>dock.multi.\0\ dockables</placeholder>
 													</key>
 													<item key="convert" type="b">true</item>
@@ -531,50 +722,14 @@
 														<item type="s">hold</item>
 													</item>
 													<item key="dock.size" type="i">123</item>
-													<item key="dock.index" type="i">3</item>
-													<item key="dock.id" type="i">3</item>
+													<item key="dock.index" type="i">2</item>
+													<item key="dock.id" type="i">2</item>
 													<item key="dock.placeholder" type="s">dock.multi.\0\ dockables</item>
 													<item key="dock.hold" type="b">false</item>
 												</entry>
 												<entry>
 													<key shared="false">
-														<placeholder>dock.multi.\6\ dockables</placeholder>
-														<placeholder>dock.multi.\5\ dockables</placeholder>
-													</key>
-													<item key="convert" type="b">true</item>
-													<item key="convert-keys" type="a">
-														<item type="s">size</item>
-														<item type="s">index</item>
-														<item type="s">id</item>
-														<item type="s">placeholder</item>
-														<item type="s">hold</item>
-													</item>
-													<item key="dock.size" type="i">438</item>
-													<item key="dock.index" type="i">4</item>
-													<item key="dock.id" type="i">4</item>
-													<item key="dock.placeholder" type="s">dock.multi.\6\ dockables</item>
-													<item key="dock.hold" type="b">false</item>
-												</entry>
-												<entry>
-													<key shared="false">
-														<placeholder>dock.multi.\39\ dockables</placeholder>
-													</key>
-													<item key="convert" type="b">true</item>
-													<item key="convert-keys" type="a">
-														<item type="s">size</item>
-														<item type="s">index</item>
-														<item type="s">id</item>
-														<item type="s">placeholder</item>
-														<item type="s">hold</item>
-													</item>
-													<item key="dock.size" type="i">799</item>
-													<item key="dock.index" type="i">5</item>
-													<item key="dock.id" type="i">5</item>
-													<item key="dock.placeholder" type="s">dock.multi.\39\ dockables</item>
-													<item key="dock.hold" type="b">false</item>
-												</entry>
-												<entry>
-													<key shared="false">
+														<placeholder>dock.multi.\7\ dockables</placeholder>
 														<placeholder>dock.multi.\20\ dockables</placeholder>
 													</key>
 													<item key="convert" type="b">true</item>
@@ -586,14 +741,32 @@
 														<item type="s">hold</item>
 													</item>
 													<item key="dock.size" type="i">755</item>
-													<item key="dock.index" type="i">6</item>
-													<item key="dock.id" type="i">6</item>
+													<item key="dock.index" type="i">3</item>
+													<item key="dock.id" type="i">3</item>
 													<item key="dock.placeholder" type="s">dock.multi.\20\ dockables</item>
 													<item key="dock.hold" type="b">false</item>
 												</entry>
 												<entry>
 													<key shared="false">
-														<placeholder>dock.multi.\1\ dockables</placeholder>
+														<placeholder>dock.multi.\5\ dockables</placeholder>
+													</key>
+													<item key="convert" type="b">true</item>
+													<item key="convert-keys" type="a">
+														<item type="s">size</item>
+														<item type="s">index</item>
+														<item type="s">id</item>
+														<item type="s">placeholder</item>
+														<item type="s">hold</item>
+													</item>
+													<item key="dock.size" type="i">672</item>
+													<item key="dock.index" type="i">4</item>
+													<item key="dock.id" type="i">4</item>
+													<item key="dock.placeholder" type="s">dock.multi.\5\ dockables</item>
+													<item key="dock.hold" type="b">false</item>
+												</entry>
+												<entry>
+													<key shared="false">
+														<placeholder>dock.multi.\6\ dockables</placeholder>
 													</key>
 													<item key="convert" type="b">true</item>
 													<item key="convert-keys" type="a">
@@ -604,9 +777,66 @@
 														<item type="s">hold</item>
 													</item>
 													<item key="dock.size" type="i">593</item>
+													<item key="dock.index" type="i">5</item>
+													<item key="dock.id" type="i">5</item>
+													<item key="dock.placeholder" type="s">dock.multi.\6\ dockables</item>
+													<item key="dock.hold" type="b">false</item>
+												</entry>
+												<entry>
+													<key shared="false">
+														<placeholder>dock.multi.\39\ dockables</placeholder>
+														<placeholder>dock.multi.\14\ dockables</placeholder>
+													</key>
+													<item key="convert" type="b">true</item>
+													<item key="convert-keys" type="a">
+														<item type="s">size</item>
+														<item type="s">index</item>
+														<item type="s">id</item>
+														<item type="s">placeholder</item>
+														<item type="s">hold</item>
+													</item>
+													<item key="dock.size" type="i">799</item>
+													<item key="dock.index" type="i">6</item>
+													<item key="dock.id" type="i">6</item>
+													<item key="dock.placeholder" type="s">dock.multi.\39\ dockables</item>
+													<item key="dock.hold" type="b">false</item>
+												</entry>
+												<entry>
+													<key shared="false">
+														<placeholder>dock.multi.\21\ dockables</placeholder>
+														<placeholder>dock.multi.\12\ dockables</placeholder>
+													</key>
+													<item key="convert" type="b">true</item>
+													<item key="convert-keys" type="a">
+														<item type="s">size</item>
+														<item type="s">index</item>
+														<item type="s">id</item>
+														<item type="s">placeholder</item>
+														<item type="s">hold</item>
+													</item>
+													<item key="dock.size" type="i">632</item>
 													<item key="dock.index" type="i">7</item>
 													<item key="dock.id" type="i">7</item>
-													<item key="dock.placeholder" type="s">dock.multi.\1\ dockables</item>
+													<item key="dock.placeholder" type="s">dock.multi.\12\ dockables</item>
+													<item key="dock.hold" type="b">false</item>
+												</entry>
+												<entry>
+													<key shared="false">
+														<placeholder>dock.multi.\13\ dockables</placeholder>
+														<placeholder>dock.multi.\22\ dockables</placeholder>
+													</key>
+													<item key="convert" type="b">true</item>
+													<item key="convert-keys" type="a">
+														<item type="s">size</item>
+														<item type="s">index</item>
+														<item type="s">id</item>
+														<item type="s">placeholder</item>
+														<item type="s">hold</item>
+													</item>
+													<item key="dock.size" type="i">466</item>
+													<item key="dock.index" type="i">8</item>
+													<item key="dock.id" type="i">8</item>
+													<item key="dock.placeholder" type="s">dock.multi.\13\ dockables</item>
 													<item key="dock.hold" type="b">false</item>
 												</entry>
 											</placeholders>
@@ -624,15 +854,6 @@
 											<id>26 dockables</id>
 											<multiple>
 												<dockableId>gov.raptor.core.view.gui.layers.viewmanager.LayerViewPanel</dockableId>
-											</multiple>
-										</layout>
-										<children ignore="false"/>
-									</child>
-									<child>
-										<layout factory="delegate_dockables" placeholder="dock.multi.\15\ dockables">
-											<id>15 dockables</id>
-											<multiple>
-												<dockableId>Next Vision Camera</dockableId>
 											</multiple>
 										</layout>
 										<children ignore="false"/>
@@ -656,10 +877,28 @@
 										<children ignore="false"/>
 									</child>
 									<child>
+										<layout factory="delegate_dockables" placeholder="dock.multi.\20\ dockables">
+											<id>20 dockables</id>
+											<multiple>
+												<dockableId>Gamepad App</dockableId>
+											</multiple>
+										</layout>
+										<children ignore="false"/>
+									</child>
+									<child>
+										<layout factory="delegate_dockables" placeholder="dock.multi.\5\ dockables">
+											<id>5 dockables</id>
+											<multiple>
+												<dockableId>DPACS Motor Test</dockableId>
+											</multiple>
+										</layout>
+										<children ignore="false"/>
+									</child>
+									<child>
 										<layout factory="delegate_dockables" placeholder="dock.multi.\6\ dockables">
 											<id>6 dockables</id>
 											<multiple>
-												<dockableId>DPACS Motor Test</dockableId>
+												<dockableId>DPACS Pilot Controls</dockableId>
 											</multiple>
 										</layout>
 										<children ignore="false"/>
@@ -674,19 +913,19 @@
 										<children ignore="false"/>
 									</child>
 									<child>
-										<layout factory="delegate_dockables" placeholder="dock.multi.\20\ dockables">
-											<id>20 dockables</id>
+										<layout factory="delegate_dockables" placeholder="dock.multi.\12\ dockables">
+											<id>12 dockables</id>
 											<multiple>
-												<dockableId>Gamepad App</dockableId>
+												<dockableId>Follow Me</dockableId>
 											</multiple>
 										</layout>
 										<children ignore="false"/>
 									</child>
 									<child>
-										<layout factory="delegate_dockables" placeholder="dock.multi.\1\ dockables">
-											<id>1 dockables</id>
+										<layout factory="delegate_dockables" placeholder="dock.multi.\13\ dockables">
+											<id>13 dockables</id>
 											<multiple>
-												<dockableId>DPACS Pilot Controls</dockableId>
+												<dockableId>Common Config Editor</dockableId>
 											</multiple>
 										</layout>
 										<children ignore="false"/>
@@ -698,7 +937,7 @@
 					</base>
 					<modes>
 						<dockables>
-							<entry id="multi 1 dockables" current="dock.mode.minimized">
+							<entry id="multi 13 dockables" current="dock.mode.minimized">
 								<history>
 									<mode>dock.mode.minimized</mode>
 								</history>
@@ -709,16 +948,54 @@
 										<applicationDefined>false</applicationDefined>
 										<location>
 											<property factory="flap dock">
-												<index>7</index>
+												<index>4</index>
 												<holding>false</holding>
-												<size>593</size>
-												<placeholder>dock.multi.\1\ dockables</placeholder>
+												<size>303</size>
+												<placeholder>dock.multi.\13\ dockables</placeholder>
 											</property>
 										</location>
 									</property>
 								</properties>
 							</entry>
-							<entry id="multi 15 dockables" current="dock.mode.minimized">
+							<entry id="multi 11 dockables" current="dock.mode.minimized">
+								<history>
+									<mode>dock.mode.normal</mode>
+									<mode>dock.mode.minimized</mode>
+								</history>
+								<properties>
+									<property id="dock.mode.minimized">
+										<mode>dock.mode.minimized</mode>
+										<root>south</root>
+										<applicationDefined>false</applicationDefined>
+										<location>
+											<property factory="flap dock">
+												<index>8</index>
+												<holding>false</holding>
+												<size>258</size>
+												<placeholder>dock.multi.\11\ dockables</placeholder>
+											</property>
+										</location>
+									</property>
+									<property id="dock.mode.normal">
+										<mode>dock.mode.normal</mode>
+										<root>center</root>
+										<applicationDefined>false</applicationDefined>
+										<location>
+											<property factory="SplitDockPlaceholderProperty">
+												<placeholder>dock.multi.\11\ dockables</placeholder>
+												<backup-path>
+													<node location="RIGHT" size="0.5" id="1740165476158"/>
+													<node location="TOP" size="0.5" id="1740165360776"/>
+													<node location="LEFT" size="0.35138794854434663" id="1740165373568"/>
+													<node location="RIGHT" size="0.5" id="1740265828812"/>
+													<leaf id="1740265828810"/>
+												</backup-path>
+											</property>
+										</location>
+									</property>
+								</properties>
+							</entry>
+							<entry id="multi 8 dockables" current="dock.mode.minimized">
 								<history>
 									<mode>dock.mode.minimized</mode>
 								</history>
@@ -729,10 +1006,51 @@
 										<applicationDefined>false</applicationDefined>
 										<location>
 											<property factory="flap dock">
-												<index>3</index>
+												<index>6</index>
 												<holding>false</holding>
-												<size>569</size>
-												<placeholder>dock.multi.\15\ dockables</placeholder>
+												<size>365</size>
+												<placeholder>dock.multi.\8\ dockables</placeholder>
+											</property>
+										</location>
+									</property>
+								</properties>
+							</entry>
+							<entry id="multi 37 dockables" current="dock.mode.normal">
+								<history>
+									<mode>dock.mode.normal</mode>
+								</history>
+								<properties>
+									<property id="dock.mode.normal">
+										<mode>dock.mode.normal</mode>
+										<root>center</root>
+										<applicationDefined>false</applicationDefined>
+										<location>
+											<property factory="SplitDockPlaceholderProperty">
+												<placeholder>dock.multi.\37\ dockables</placeholder>
+												<backup-path>
+													<node location="RIGHT" size="0.5" id="1740266214176"/>
+													<leaf id="1740266214174"/>
+												</backup-path>
+											</property>
+										</location>
+									</property>
+								</properties>
+							</entry>
+							<entry id="multi 4 dockables" current="dock.mode.minimized">
+								<history>
+									<mode>dock.mode.minimized</mode>
+								</history>
+								<properties>
+									<property id="dock.mode.minimized">
+										<mode>dock.mode.minimized</mode>
+										<root>south</root>
+										<applicationDefined>false</applicationDefined>
+										<location>
+											<property factory="flap dock">
+												<index>4</index>
+												<holding>false</holding>
+												<size>218</size>
+												<placeholder>dock.multi.\4\ dockables</placeholder>
 											</property>
 										</location>
 									</property>
@@ -749,9 +1067,9 @@
 										<applicationDefined>false</applicationDefined>
 										<location>
 											<property factory="flap dock">
-												<index>1</index>
+												<index>5</index>
 												<holding>false</holding>
-												<size>672</size>
+												<size>593</size>
 												<placeholder>dock.multi.\6\ dockables</placeholder>
 											</property>
 										</location>
@@ -765,13 +1083,13 @@
 								<properties>
 									<property id="dock.mode.minimized">
 										<mode>dock.mode.minimized</mode>
-										<root>east</root>
+										<root>west</root>
 										<applicationDefined>false</applicationDefined>
 										<location>
 											<property factory="flap dock">
-												<index>8</index>
+												<index>7</index>
 												<holding>false</holding>
-												<size>365</size>
+												<size>632</size>
 												<placeholder>dock.multi.\21\ dockables</placeholder>
 											</property>
 										</location>
@@ -809,10 +1127,30 @@
 										<applicationDefined>false</applicationDefined>
 										<location>
 											<property factory="flap dock">
-												<index>9</index>
+												<index>8</index>
 												<holding>false</holding>
 												<size>303</size>
 												<placeholder>dock.multi.\26\ dockables</placeholder>
+											</property>
+										</location>
+									</property>
+								</properties>
+							</entry>
+							<entry id="multi 14 dockables" current="dock.mode.minimized">
+								<history>
+									<mode>dock.mode.minimized</mode>
+								</history>
+								<properties>
+									<property id="dock.mode.minimized">
+										<mode>dock.mode.minimized</mode>
+										<root>west</root>
+										<applicationDefined>false</applicationDefined>
+										<location>
+											<property factory="flap dock">
+												<index>6</index>
+												<holding>false</holding>
+												<size>799</size>
+												<placeholder>dock.multi.\14\ dockables</placeholder>
 											</property>
 										</location>
 									</property>
@@ -840,18 +1178,72 @@
 							</entry>
 							<entry id="multi 12 dockables" current="dock.mode.minimized">
 								<history>
+									<mode>dock.mode.normal</mode>
+									<mode>dock.mode.externalized</mode>
+									<mode>dock.mode.maximized</mode>
 									<mode>dock.mode.minimized</mode>
 								</history>
 								<properties>
+									<property id="dock.mode.maximized">
+										<mode>dock.mode.maximized</mode>
+										<root>external</root>
+										<applicationDefined>false</applicationDefined>
+										<location>
+											<property factory="screen dock">
+												<x>0</x>
+												<y>0</y>
+												<width>1914</width>
+												<height>836</height>
+												<fullscreen>true</fullscreen>
+												<placeholder>dock.multi.\12\ dockables</placeholder>
+											</property>
+										</location>
+									</property>
 									<property id="dock.mode.minimized">
 										<mode>dock.mode.minimized</mode>
-										<root>south</root>
+										<root>west</root>
 										<applicationDefined>false</applicationDefined>
 										<location>
 											<property factory="flap dock">
-												<index>6</index>
+												<index>7</index>
 												<holding>false</holding>
-												<size>258</size>
+												<size>632</size>
+												<placeholder>dock.multi.\12\ dockables</placeholder>
+											</property>
+										</location>
+									</property>
+									<property id="dock.mode.externalized">
+										<mode>dock.mode.externalized</mode>
+										<root>external</root>
+										<applicationDefined>false</applicationDefined>
+										<location>
+											<property factory="screen dock">
+												<x>0</x>
+												<y>0</y>
+												<width>1914</width>
+												<height>836</height>
+												<fullscreen>false</fullscreen>
+												<placeholder>dock.multi.\12\ dockables</placeholder>
+											</property>
+										</location>
+									</property>
+									<property id="dock.mode.normal">
+										<mode>dock.mode.normal</mode>
+										<root>center</root>
+										<applicationDefined>false</applicationDefined>
+										<location>
+											<property factory="SplitDockPlaceholderProperty">
+												<placeholder>dock.multi.\12\ dockables</placeholder>
+												<backup-path>
+													<node location="RIGHT" size="0.5" id="1740165476158"/>
+													<node location="TOP" size="0.5" id="1740165360776"/>
+													<node location="LEFT" size="0.35138794854434663" id="1740165373568"/>
+													<node location="LEFT" size="0.5" id="1740265828812"/>
+													<leaf id="1740165360774"/>
+												</backup-path>
+											</property>
+											<property factory="StackDockPropertyFactory">
+												<index>1</index>
 												<placeholder>dock.multi.\12\ dockables</placeholder>
 											</property>
 										</location>
@@ -893,23 +1285,61 @@
 									</property>
 								</properties>
 							</entry>
-							<entry id="multi 2 dockables" current="dock.mode.normal">
+							<entry id="multi 7 dockables" current="dock.mode.minimized">
 								<history>
-									<mode>dock.mode.normal</mode>
+									<mode>dock.mode.minimized</mode>
 								</history>
 								<properties>
-									<property id="dock.mode.normal">
-										<mode>dock.mode.normal</mode>
-										<root>center</root>
+									<property id="dock.mode.minimized">
+										<mode>dock.mode.minimized</mode>
+										<root>west</root>
 										<applicationDefined>false</applicationDefined>
 										<location>
-											<property factory="SplitDockPlaceholderProperty">
+											<property factory="flap dock">
+												<index>1</index>
+												<holding>false</holding>
+												<size>755</size>
+												<placeholder>dock.multi.\7\ dockables</placeholder>
+											</property>
+										</location>
+									</property>
+								</properties>
+							</entry>
+							<entry id="multi 2 dockables" current="dock.mode.minimized">
+								<history>
+									<mode>dock.mode.minimized</mode>
+								</history>
+								<properties>
+									<property id="dock.mode.minimized">
+										<mode>dock.mode.minimized</mode>
+										<root>south</root>
+										<applicationDefined>false</applicationDefined>
+										<location>
+											<property factory="flap dock">
+												<index>3</index>
+												<holding>false</holding>
+												<size>246</size>
 												<placeholder>dock.multi.\2\ dockables</placeholder>
-												<backup-path>
-													<node location="TOP" size="0.5" id="1740165360776"/>
-													<node location="RIGHT" size="0.5" id="1740165373568"/>
-													<leaf id="1740165373566"/>
-												</backup-path>
+											</property>
+										</location>
+									</property>
+								</properties>
+							</entry>
+							<entry id="multi 10 dockables" current="dock.mode.minimized">
+								<history>
+									<mode>dock.mode.minimized</mode>
+								</history>
+								<properties>
+									<property id="dock.mode.minimized">
+										<mode>dock.mode.minimized</mode>
+										<root>south</root>
+										<applicationDefined>false</applicationDefined>
+										<location>
+											<property factory="flap dock">
+												<index>1</index>
+												<holding>false</holding>
+												<size>120</size>
+												<placeholder>dock.multi.\10\ dockables</placeholder>
 											</property>
 										</location>
 									</property>
@@ -922,13 +1352,13 @@
 								<properties>
 									<property id="dock.mode.minimized">
 										<mode>dock.mode.minimized</mode>
-										<root>west</root>
+										<root>east</root>
 										<applicationDefined>false</applicationDefined>
 										<location>
 											<property factory="flap dock">
-												<index>5</index>
+												<index>2</index>
 												<holding>false</holding>
-												<size>235</size>
+												<size>300</size>
 												<placeholder>dock.multi.\16\ dockables</placeholder>
 											</property>
 										</location>
@@ -942,14 +1372,34 @@
 								<properties>
 									<property id="dock.mode.minimized">
 										<mode>dock.mode.minimized</mode>
-										<root>south</root>
+										<root>east</root>
 										<applicationDefined>false</applicationDefined>
 										<location>
 											<property factory="flap dock">
-												<index>8</index>
+												<index>3</index>
 												<holding>false</holding>
-												<size>120</size>
+												<size>569</size>
 												<placeholder>dock.multi.\23\ dockables</placeholder>
+											</property>
+										</location>
+									</property>
+								</properties>
+							</entry>
+							<entry id="multi 3 dockables" current="dock.mode.minimized">
+								<history>
+									<mode>dock.mode.minimized</mode>
+								</history>
+								<properties>
+									<property id="dock.mode.minimized">
+										<mode>dock.mode.minimized</mode>
+										<root>east</root>
+										<applicationDefined>false</applicationDefined>
+										<location>
+											<property factory="flap dock">
+												<index>2</index>
+												<holding>false</holding>
+												<size>209</size>
+												<placeholder>dock.multi.\3\ dockables</placeholder>
 											</property>
 										</location>
 									</property>
@@ -962,13 +1412,13 @@
 								<properties>
 									<property id="dock.mode.minimized">
 										<mode>dock.mode.minimized</mode>
-										<root>south</root>
+										<root>west</root>
 										<applicationDefined>false</applicationDefined>
 										<location>
 											<property factory="flap dock">
 												<index>8</index>
 												<holding>false</holding>
-												<size>120</size>
+												<size>466</size>
 												<placeholder>dock.multi.\22\ dockables</placeholder>
 											</property>
 										</location>
@@ -997,8 +1447,8 @@
 							</entry>
 							<entry id="multi 38 dockables" current="dock.mode.externalized">
 								<history>
-									<mode>dock.mode.normal</mode>
 									<mode>dock.mode.maximized</mode>
+									<mode>dock.mode.normal</mode>
 									<mode>dock.mode.minimized</mode>
 									<mode>dock.mode.externalized</mode>
 								</history>
@@ -1010,9 +1460,9 @@
 										<location>
 											<property factory="screen dock">
 												<x>0</x>
-												<y>0</y>
-												<width>1920</width>
-												<height>1080</height>
+												<y>1</y>
+												<width>1922</width>
+												<height>1140</height>
 												<fullscreen>true</fullscreen>
 												<placeholder>dock.multi.\38\ dockables</placeholder>
 											</property>
@@ -1024,9 +1474,9 @@
 										<applicationDefined>false</applicationDefined>
 										<location>
 											<property factory="flap dock">
-												<index>4</index>
+												<index>9</index>
 												<holding>false</holding>
-												<size>998</size>
+												<size>835</size>
 												<placeholder>dock.multi.\38\ dockables</placeholder>
 											</property>
 										</location>
@@ -1038,9 +1488,9 @@
 										<location>
 											<property factory="screen dock">
 												<x>0</x>
-												<y>0</y>
-												<width>1920</width>
-												<height>1200</height>
+												<y>1</y>
+												<width>1922</width>
+												<height>1140</height>
 												<fullscreen>false</fullscreen>
 												<placeholder>dock.multi.\38\ dockables</placeholder>
 											</property>
@@ -1054,10 +1504,9 @@
 											<property factory="SplitDockPlaceholderProperty">
 												<placeholder>dock.multi.\38\ dockables</placeholder>
 												<backup-path>
-													<node location="BOTTOM" size="0.5" id="1740165360776"/>
-													<node location="BOTTOM" size="0.5" id="1740165332693"/>
-													<node location="TOP" size="0.5" id="1740076519215"/>
-													<leaf id="1740076519213"/>
+													<node location="RIGHT" size="0.5" id="1740265873237"/>
+													<node location="LEFT" size="0.5" id="1740165476158"/>
+													<leaf id="1740265873241"/>
 												</backup-path>
 											</property>
 										</location>
@@ -1115,7 +1564,7 @@
 										<applicationDefined>false</applicationDefined>
 										<location>
 											<property factory="flap dock">
-												<index>1</index>
+												<index>4</index>
 												<holding>false</holding>
 												<size>672</size>
 												<placeholder>dock.multi.\5\ dockables</placeholder>
@@ -1135,7 +1584,7 @@
 										<applicationDefined>false</applicationDefined>
 										<location>
 											<property factory="flap dock">
-												<index>16</index>
+												<index>15</index>
 												<holding>false</holding>
 												<size>1150</size>
 												<placeholder>dock.multi.\33\ dockables</placeholder>
@@ -1155,32 +1604,26 @@
 		<resource name="ccontrol.preferences"/>
 	</resources>
 	<closed>
-		<panel dockableId="gov.raptor.core.view.gui.apps.AppsPanel"/>
-		<panel dockableId="gov.raptor.core.view.gui.r2d2.R2D2Panel"/>
-		<panel dockableId="gov.raptor.core.view.gui.IconPanel"/>
-		<panel dockableId="VirtualProtractor App Panel"/>
-		<panel dockableId="Track Analytics Panel"/>
+		<panel dockableId="FreeDraw App Panel"/>
 		<panel dockableId="gov.raptor.core.view.gui.files.FileTransferPanel"/>
+		<panel dockableId="gov.raptor.core.view.gui.r2d2.R2D2Panel"/>
+		<panel dockableId="gov.raptor.core.view.gui.ContextSearchPanel"/>
+		<panel dockableId="gov.raptor.core.view.gui.files.FilesPanel"/>
+		<panel dockableId="VirtualProtractor App Panel"/>
+		<panel dockableId="gov.raptor.core.view.gui.apps.AppsPanel"/>
+		<panel dockableId="gov.raptor.core.view.gui.explorer.view.MainExplorerPanel"/>
+		<panel dockableId="gov.raptor.core.view.gui.eventlog.EventLogPanel"/>
+		<panel dockableId="gov.raptor.core.view.gui.propertiespanel.PropertiesPanel"/>
+		<panel dockableId="Track Analytics Panel"/>
+		<panel dockableId="gov.raptor.core.view.gui.IconPanel"/>
+		<panel dockableId="High Low Tool Panel"/>
 		<panel dockableId="gov.raptor.core.view.gui.connections.ConnectionsPanel"/>
 		<panel dockableId="gov.raptor.core.view.gui.DevicesPanel"/>
-		<panel dockableId="Vibration Status"/>
-		<panel dockableId="DPACS Mission Table"/>
-		<panel dockableId="gov.raptor.core.view.gui.files.FilesPanel"/>
-		<panel dockableId="Configuration Editor"/>
-		<panel dockableId="gov.raptor.core.view.gui.ContextSearchPanel"/>
-		<panel dockableId="gov.raptor.core.view.gui.explorer.view.MainExplorerPanel"/>
-		<panel dockableId="EKF Status"/>
 		<panel dockableId="6ef78f19-81e6-4f4d-a745-75a5cd542e05"/>
-		<panel dockableId="Follow Me"/>
-		<panel dockableId="FreeDraw App Panel"/>
-		<panel dockableId="gov.raptor.core.view.gui.propertiespanel.PropertiesPanel"/>
-		<panel dockableId="Common Config Editor"/>
-		<panel dockableId="LOB Controls"/>
-		<panel dockableId="High Low Tool Panel"/>
-		<panel dockableId="gov.raptor.core.view.gui.eventlog.EventLogPanel"/>
 	</closed>
 	<unpinned/>
 	<pinned>
+		<panel dockableId="javax.swing.JScrollPane"/>
 		<panel dockableId="javax.swing.JScrollPane"/>
 		<panel dockableId="javax.swing.JScrollPane"/>
 		<panel dockableId="javax.swing.JScrollPane"/>

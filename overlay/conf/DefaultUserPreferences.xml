@@ -27,9 +27,8 @@
 
                     <!-- Specify the default skin for the user. Requires knowledge of the skin's class name. This value
                          will be updated if the user changes skins via Raptor's preference options.-->
-                    <!-- <entry key="skin" value="gov.raptor.core.view.gui.skins.DefaultRaptorSkin"/> -->
-                    <!--entry key="skin" value="gov.raptor.core.view.gui.skins.DefaultRaptorSkin"/ -->
-                    <entry key="skin" value="org.pushingpixels.substance.api.skin.BusinessBlackSteelSkin"/>
+                    <entry key="skin" value="gov.raptor.core.view.gui.skins.DefaultRaptorSkin"/>
+                    <!-- entry key="skin" value="org.pushingpixels.substance.api.skin.BusinessBlackSteelSkin"/ -->
 
                     <!-- Specify whether user drawn shapes should be labeled by default -->
                     <entry key="showShapeLabels" value="false"/>

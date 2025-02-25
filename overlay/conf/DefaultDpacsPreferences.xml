@@ -75,7 +75,7 @@
     <MavLink_V2>true</MavLink_V2>
     <Confirm_Abort>true</Confirm_Abort>
     <Confirm_Keyboard_Abort>true</Confirm_Keyboard_Abort>
-    <Desktop_Notifications>true</Desktop_Notifications>
+    <Desktop_Notifications>false</Desktop_Notifications>
     <NO_RC_RECEIVER>true</NO_RC_RECEIVER>
     <USE_THROTTLE_VERIFIER>true</USE_THROTTLE_VERIFIER>
     <Automatically_Activate_Follow_Me_Mode>false</Automatically_Activate_Follow_Me_Mode>
